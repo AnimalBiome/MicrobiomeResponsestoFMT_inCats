@@ -1,0 +1,323 @@
+sampleID,group,type,name,sex,breed,breed_r,sterilized,weight_lbs,bod_cond,donor,donor_r,donorID,response,IBD,antibiotics,vomiting,diarrhea,constipation,symptom,days_since,duration_days,wet_food,raw_food,dry_food,diet_combo,col_date,seq_date,date_of_birth,age_yrs,response2
+9QVBFP,donor,donor,Augustanor Eleanor Fuchs,Female,Domestic Shorthair,Domestic,Yes,9,5,Augustanor,Augustanor2,9QVBFP,donor,No,NA,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,12/5/18,9/8/21,1/1/12,6.92,NA
+TLDR72,donor,donor,Augustanor Eleanor Fuchs,Female,Domestic Shorthair,Domestic,Yes,9,5,Augustanor,Augustanor1,TLDR72,donor,No,NA,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,8/29/18,9/8/21,1/1/12,6.58,NA
+KS28KN,donor,donor,Augustanor Fuchs,NA,Combo,NA,Yes,10.5,5,Augustanor,Augustanor3,KS28KN,donor,No,NA,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,1/9/19,9/8/21,NA,6.47,NA
+TND32W,donor,donor,Augustanor Fuchs,NA,Combo,NA,Yes,10.5,5,Augustanor,Augustanor4,TND32W,donor,No,NA,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,4/3/19,3/25/19,NA,6.47,NA
+M4PSSS,donor,donor,Augustanor Gus Fuchs,Male,Domestic Longhair,Domestic,Yes,12,5,Augustanor,Augustanor5,M4PSSS,donor,No,NA,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,8/28/18,9/8/21,4/26/14,4.33,NA
+NPJ654,donor,donor,Eddie,Male,Domestic Shorthair,Domestic,Yes,9,5,Eddie,Eddie,NPJ654,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,4/12/19,4/23/19,4/1/18,1,NA
+4EXDUK,donor,donor,Fabiola,Female,Domestic Shorthair,Domestic,Yes,8,5,Fabiola,Fabiola,4EXDUK,donor,No,NA,No,No,No,NA,NA,NA,No,No,Yes,Dry,1/9/16,9/8/21,NA,NA,NA
+FEVEUG,donor,donor,Fiogus Fiona Isaacson,Female,Domestic Shorthair,Domestic,Yes,10,5,Fiogus,Fiogus1,FEVEUG,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,3/9/17,9/8/21,1/1/15,2.17,NA
+RVDKDV,donor,donor,Fiogus Fiona Isaacson,Female,Domestic Shorthair,Domestic,Yes,10,5,Fiogus,Fiogus2,RVDKDV,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,1/19/19,9/8/21,1/1/15,4,NA
+HGRAPM,donor,donor,Fiogus Gus Isaacson,Male,Domestic Shorthair,Domestic,Yes,10,5,Fiogus,Fiogus3,HGRAPM,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,3/9/19,9/8/21,1/1/17,2.17,NA
+UCKDJU,donor,donor,Lolita,Female,Abyssinian,Other,Yes,9,5,Lolita,Lolita,UCKDJU,donor,No,NA,No,No,No,NA,NA,NA,No,No,Yes,Dry,NA,9/8/21,11/16/07,13.75,NA
+H43CJ3,donor,donor,Pinky,Male,Domestic Shorthair,Domestic,Yes,11,5,Pinky,Pinky,H43CJ3,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/6/18,9/8/21,1/1/17,1.75,NA
+81H86J,donor,donor,Scylla,Female,Domestic Shorthair,Domestic,Yes,10,5,Scylla,Scylla1,81H86J,donor,No,NA,No,No,No,NA,NA,NA,No,Yes,No,Raw,5/5/17,1/8/19,6/15/08,8.83,NA
+DKAYXQ,donor,donor,Scylla,Female,Domestic Shorthair,Domestic,Yes,10,5,Scylla,Scylla2,DKAYXQ,donor,No,NA,No,No,No,NA,NA,NA,No,Yes,No,Raw,10/19/19,10/25/19,6/15/08,11.33,NA
+37H62V,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha1,37H62V,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,5/10/17,1/8/19,7/15/15,1.75,NA
+6RBA2U,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha6,6RBA2U,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,2/27/19,3/11/19,7/15/15,3.58,NA
+97FXPV,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha4,97FXPV,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,9/25/18,3/17/19,7/15/15,3.17,NA
+ABC123,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha3,ABC123,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,8/29/18,4/1/19,7/15/15,3.08,NA
+N6ZL3K,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha5,N6ZL3K,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,1/19/19,1/15/19,7/15/15,3.5,NA
+TABITHA,donor,donor,Tabitha,Female,Domestic Shorthair,Domestic,Yes,10,5,Tabitha,Tabitha2,TABITHA,donor,No,NA,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,5/18/18,5/2/19,7/15/15,2.83,NA
+HSEEYU,healthy,healthy,Agatha,Female,Bengal,Other,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,3/11/19,4/1/19,NA,8.67,NA
+HLEQLC,healthy,healthy,Amelie,Female,Domestic Shorthair,Domestic,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,10/18/19,10/25/19,NA,5.25,NA
+K7SX6Z,healthy,healthy,Andi,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,1/10/20,11/23/20,NA,3.92,NA
+FAYM2P,healthy,healthy,Annie,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,08/06/19,8/16/19,NA,12,NA
+T97S4A,healthy,healthy,Arya,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,7/20/18,4/16/19,NA,6.17,NA
+YTVMMM,healthy,healthy,Aspen,Female,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,11/12/20,11/19/20,NA,3,NA
+1055CR,healthy,healthy,Bali,Female,Unknown,Other,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,NA,NA,NA,2,NA
+7JCXZT,healthy,healthy,Baloo,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,10/9/19,10/23/19,NA,7.5,NA
+MZLDV7,healthy,healthy,Bandito,Male,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,12/14/19,12/22/19,NA,1.416666667,NA
+G6J8SX,healthy,healthy,Bella,Female,Domestic Mediumhair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,6/1/20,12/18/20,NA,4.17,NA
+NBGTUN,healthy,healthy,Bingley,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,09/20/19,11/8/19,NA,2.166666667,NA
+WYL49G,healthy,healthy,Blue Veronique,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/20/19,8/22/19,NA,2.916666667,NA
+AEN7G9,healthy,healthy,Bodhi,Male,American Shorthair,Other,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,9/5/18,4/30/19,NA,5.25,NA
+66MFKG,healthy,healthy,Bruce Wayne,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,10/19/20,12/18/20,NA,2.916666667,NA
+RHYNM2,healthy,healthy,Buli,Male,Ragdoll,Ragdoll,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,05/18/20,5/29/20,NA,0.75,NA
+GEJBE6,healthy,healthy,Callie,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,2/11/18,1/8/19,NA,3.83,NA
+CGFW7G,healthy,healthy,Calypso Takade,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/27/19,8/30/19,NA,0.916666667,NA
+CEHZSX,healthy,healthy,Captain,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/21/19,11/1/19,NA,2.5,NA
+1058CR,healthy,healthy,Carl Rogers,Male,Maine Coon,Other,Yes,18,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,NA,NA,NA,4,NA
+1182CR,healthy,healthy,Carlie,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,NA,NA,NA,1,NA
+1299CR,healthy,healthy,Chak,Female,Domestic Shorthair,Domestic,Yes,5,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,NA,NA,NA,6,NA
+6ADNQL,healthy,healthy,Cheshire,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,04/18/18,5/2/19,NA,2,NA
+1336CR,healthy,healthy,Chico,Male,Ragdoll,Ragdoll,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,NA,NA,NA,12,NA
+PSLEMH,healthy,healthy,Chloe,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,01/09/21,1/22/21,NA,1.583333333,NA
+97TDAL,healthy,healthy,Cleo,Female,Domestic Shorthair,Domestic,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,12/6/17,1/8/19,NA,9.58,NA
+LYJMFB,healthy,healthy,Cleo Veronique,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/20/19,8/22/19,NA,2.916666667,NA
+4RBGHG,healthy,healthy,Clover ,Female,Domestic Shorthair,Domestic,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,9/24/19,10/4/19,NA,6.5,NA
+LFQU9N,healthy,healthy,Clover Basak,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,9/12/20,9/21/20,NA,7,NA
+RVCD2W,healthy,healthy,Cookie,Female,Domestic Shorthair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,12/29/19,1/10/20,NA,8.17,NA
+BYLB3D,healthy,healthy,Crawford,Male,Domestic Mediumhair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,4/22/20,12/18/20,NA,6.5,NA
+PPWXYX,healthy,healthy,Cupcake,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,02/09/21,2/19/21,NA,2.75,NA
+V4FVJY,healthy,healthy,Daisy Brown,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,NA,12/18/20,NA,3.17,NA
+1124CR,healthy,healthy,Danny,Male,Maine Coon,Other,Yes,8,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,NA,NA,NA,9,NA
+VHUCV9,healthy,healthy,Daphne,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/1/20,10/9/20,NA,7.92,NA
+JRSRLN,healthy,healthy,Dia DendySmith,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,9/25/20,10/2/20,NA,8.25,NA
+H5SUPC,healthy,healthy,Dodger Beels,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,08/30/19,9/6/19,NA,10.08333333,NA
+9DZZ9J,healthy,healthy,Dominic,Male,Domestic Mediumhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,7/20/18,4/9/19,NA,3.25,NA
+YF2FDB,healthy,healthy,Dusty,Female,American Shorthair,Other,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/3/20,11/23/20,NA,6,NA
+YSCDEB,healthy,healthy,Eddie,Male,Domestic Mediumhair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,07/27/19,8/2/19,NA,12,NA
+YQAXXH,healthy,healthy,Ellie,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,11/10/20,11/19/20,NA,7.08,NA
+QB2AZV,healthy,healthy,Felix,Male,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,NA,1/8/19,NA,5.58,NA
+4DAHFV,healthy,healthy,Fendi,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/07/20,10/16/20,NA,1.416666667,NA
+GUA5XT,healthy,healthy,Fiona Isaacson,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,7/29/19,8/2/19,NA,4.5,NA
+KKED3F,healthy,healthy,Foo,Male,Domestic Mediumhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,NA,4/2/21,NA,6,NA
+65CYWP,healthy,healthy,Fred,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,Yes,Raw,5/12/20,11/23/20,NA,6.92,NA
+N76S5Q,healthy,healthy,Galen,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,08/12/19,8/22/19,NA,12,NA
+MRXT9R,healthy,healthy,Gatsby,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,5/27/20,11/23/20,NA,4.92,NA
+6L9EFX,healthy,healthy,Georgie,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,05/06/20,5/22/20,NA,2.916666667,NA
+RWVX59,healthy,healthy,Ginger,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,5/12/20,11/23/20,NA,6.92,NA
+HAJRGR,healthy,healthy,Gris,Male,Siamese,Siamese.Burmese,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,2/20/21,3/5/21,NA,6.67,NA
+Z8M4XC,healthy,healthy,Gus Isaacson,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/29/19,8/8/19,NA,2.5,NA
+FHB25V,healthy,healthy,Hamilton,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,3/25/20,11/23/20,NA,3.92,NA
+CLYBJJ,healthy,healthy,Haru Snyder,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,11/28/19,12/6/19,NA,2.166666667,NA
+JRZ9A8,healthy,healthy,Hattie,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,05/08/20,11/23/20,NA,10.91666667,NA
+UEG4XX,healthy,healthy,Hazel,Female,Domestic Longhair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,3/12/21,4/2/21,NA,4.83,NA
+SJ6U9L,healthy,healthy,Hobbes Owens,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,09/01/19,9/13/19,NA,1.166666667,NA
+2ZRVGE,healthy,healthy,Hushpuppy,Female,Ragdoll,Ragdoll,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,9/23/20,12/18/20,NA,8.92,NA
+3JLQJX,healthy,healthy,Jambo Fontaine,Male,Domestic Longhair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,10/21/19,11/1/19,NA,6.42,NA
+PYVMCR,healthy,healthy,Janie Ramos,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/13/19,8/16/19,NA,1,NA
+60C51U,healthy,healthy,Jasnah,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,4/24/17,1/8/19,NA,4,NA
+NUQFF8,healthy,healthy,Jemima,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,09/08/17,1/8/19,NA,1,NA
+1116CR,healthy,healthy,Julio,Male,Unknown,Other,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,7/12/15,12/13/19,NA,4.5,NA
+81W13F,healthy,healthy,Kaladin,Male,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,4/24/17,1/8/19,NA,3.08,NA
+7TABAC,healthy,healthy,Kali,Female,Scottish Fold,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,4/17/19,4/26/19,NA,5.58,NA
+DRTKTD,healthy,healthy,Kingman,Male,Siberian,Norwegian.Siberian,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,10/13/20,3/5/21,NA,10,NA
+XA2C8W,healthy,healthy,Kirby Sheehan,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/20/19,8/22/19,NA,0.916666667,NA
+AJDNKK,healthy,healthy,Koji,Male,Ragdoll,Ragdoll,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,12/16/20,12/23/20,NA,0.666666667,NA
+N7WPXP,healthy,healthy,Kona,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,NA,11/23/20,NA,3.92,NA
+1239CR,healthy,healthy,Kroos,Male,Tabby Bengal,Other,Yes,13,NA,Healthy,NA,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,NA,NA,NA,8,NA
+UHURGT,healthy,healthy,Leela,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,5/4/21,5/28/21,NA,7.92,NA
+4W3V9M,healthy,healthy,Letty,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,7/20/18,4/9/19,NA,3.25,NA
+4WYUCX,healthy,healthy,Lila,Female,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,11/30/20,12/10/20,NA,10.5,NA
+P2CUEK,healthy,healthy,Lizzie,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,5/5/20,11/23/20,NA,3.08,NA
+5FMLB3,healthy,healthy,Loki,Female,Domestic Shorthair,Domestic,No,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,5/5/20,5/13/20,NA,3.08,NA
+68HYX8,healthy,healthy,Lord Kinbote,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,05/21/18,4/26/19,NA,1.833333333,NA
+18B97R,healthy,healthy,Love,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,06/08/17,1/8/19,NA,2.416666667,NA
+G3DJWW,healthy,healthy,Lucy,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,02/13/20,2/24/20,NA,1.333333333,NA
+ETYMA7,healthy,healthy,Luigi,Male,Manx,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,07/27/20,12/18/20,NA,0.916666667,NA
+Q2U4PQ,healthy,healthy,Luna,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,2/3/20,2/13/20,NA,6.75,NA
+1276CR,healthy,healthy,Luxor,Male,Domestic Shorthair,Domestic,Yes,13,NA,Healthy,Healthy,NA,healthy,No,Yes,No,No,No,NA,NA,NA,No,No,Yes,Dry,NA,NA,NA,8,NA
+UQAU6T,healthy,healthy,Lyle,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,10/03/20,12/18/20,NA,10.75,NA
+8M4WB4,healthy,healthy,Maeve,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,5/8/20,11/23/20,NA,3.92,NA
+1275CR,healthy,healthy,Maggie,Female,Domestic Shorthair,Domestic,Yes,8,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,NA,NA,NA,5.83,NA
+MRMXM7,healthy,healthy,Maggie,Female,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,05/06/19,5/31/19,NA,11.5,NA
+ZAAHY6,healthy,healthy,Maia,Female,Domestic Mediumhair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,9/1/17,10/4/19,NA,7.17,NA
+N5ESG9,healthy,healthy,Maisie,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,12/09/19,12/22/19,NA,10.91666667,NA
+JCMHN6,healthy,healthy,Maizey,Female,Unknown,Other,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,3/3/20,12/18/20,NA,6.58,NA
+77P9FF,healthy,healthy,Manchego,Male,Scottish Fold,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,07/11/20,7/24/20,NA,1.166666667,NA
+EC8QZ3,healthy,healthy,Marie,Female,Siberian,Norwegian.Siberian,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,11/20/18,1/24/19,NA,6.33,NA
+TYAPXC,healthy,healthy,Martha,Female,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,02/02/21,2/12/21,NA,1.666666667,NA
+PZDFUU,healthy,healthy,Maverick,Male,American Shorthair,Other,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,12/16/20,12/30/20,NA,10,NA
+BC231R,healthy,healthy,Midna,Female,Domestic Mediumhair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/11/18,4/26/19,NA,1.5,NA
+8Y2HMD,healthy,healthy,Miguru,Female,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,9/23/19,10/4/19,NA,4.5,NA
+YCHFEY,healthy,healthy,Minion,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,7/15/19,7/26/19,NA,4.17,NA
+UK59HD,healthy,healthy,Miss Trudy,Female,Domestic Shorthair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,03/27/20,11/23/20,NA,11.16666667,NA
+5YACPM,healthy,healthy,Mittens Chang,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/29/19,8/2/19,NA,0.666666667,NA
+QED9WF,healthy,healthy,Mitz,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,7/5/20,12/18/20,NA,5.17,NA
+WT5CDB,healthy,healthy,Mitz,Female,Persian,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,8/31/20,11/23/20,NA,5.25,NA
+HU9Z29,healthy,healthy,Mochi Huang,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,08/08/19,8/16/19,NA,1.916666667,NA
+25K84Q,healthy,healthy,Modi,Male,Devon Rex,Other,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,07/27/17,1/8/19,NA,1.25,NA
+HKS7CJ,healthy,healthy,Molly,Female,Domestic Shorthair,Domestic,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,03/01/21,3/18/21,NA,10.91666667,NA
+322GQ2,healthy,healthy,Momo,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,2/3/20,2/19/20,NA,6.83,NA
+MHWRF7,healthy,healthy,Mortimer,Male,Domestic Longhair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,11/12/19,11/22/19,NA,4.42,NA
+LL7PV7,healthy,healthy,Mossy Bones,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,12/06/19,12/13/19,NA,1.5,NA
+VEEJMG,healthy,healthy,Mushu,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,8/20/18,3/25/19,NA,9,NA
+6CK9C6,healthy,healthy,Neelix,Male,Devon Rex,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,07/22/19,7/26/19,NA,1.75,NA
+DY9YWW,healthy,healthy,Nini,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,05/19/19,5/31/19,NA,10.16666667,NA
+VJNHEK,healthy,healthy,Nora,Female,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/7/20,12/18/20,NA,8.5,NA
+S94CTT,healthy,healthy,Nova,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,07/02/20,12/18/20,NA,2.416666667,NA
+WGYJ69,healthy,healthy,Nova,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,08/31/20,11/23/20,NA,2.583333333,NA
+FCM8PT,healthy,healthy,Nyk,Male,Scottish Fold,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,9/6/20,12/18/20,NA,7,NA
+M64VGH,healthy,healthy,OMalley,Male,Domestic Mediumhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,02/07/21,3/18/21,NA,0.75,NA
+7ZY46X,healthy,healthy,Oogie,Male,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,3/25/20,11/23/20,NA,8.92,NA
+M74C82,healthy,healthy,Ophelia,Female,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/11/18,4/26/19,NA,1.5,NA
+TPWW9M,healthy,healthy,P-Ling,Female,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,12/12/20,12/18/20,NA,10.75,NA
+NTWTD9,healthy,healthy,Pandora,Female,Unknown,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,11/10/20,11/19/20,NA,7.08,NA
+QSW92B,healthy,healthy,Panther,Male,Unknown,Other,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,10/2/19,10/11/19,NA,3.25,NA
+STR7HJ,healthy,healthy,Peanut,Female,Domestic Shorthair,Domestic,No,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,11/7/19,11/15/19,NA,4.83,NA
+QUH9ET,healthy,healthy,Pepe,Male,Domestic Shorthair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,01/13/21,2/12/21,NA,0.75,NA
+Q3Q7NH,healthy,healthy,Peril Hill,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,06/09/20,12/18/20,NA,2,NA
+BXPFR7,healthy,healthy,Phoenix,Male,Domestic Shorthair,Domestic,No,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,10/1/19,11/15/19,NA,6.75,NA
+A4912R,healthy,healthy,Pinky Weng,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/20/18,4/9/19,NA,1.416666667,NA
+JWAM7Y,healthy,healthy,Poncho,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,10/18/20,12/18/20,NA,1.333333333,NA
+MXCFCR,healthy,healthy,Prawn,Male,Domestic Longhair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,1/22/21,2/12/21,NA,5.33,NA
+9VJ2QN,healthy,healthy,Prince,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,4/21/20,4/28/20,NA,6.5,NA
+JEPYJ9,healthy,healthy,Princess,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,NA,12/18/20,NA,3.08,NA
+Y7UPJ8,healthy,healthy,Pyon,Male,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,12/09/19,12/13/19,NA,1.916666667,NA
+FCX4Y6,healthy,healthy,Quincy,Female,Manx,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,12/1/18,3/1/19,NA,3.17,NA
+ZRZESC,healthy,healthy,Rio,Male,Domestic Shorthair,Domestic,Yes,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,5/19/20,11/23/20,NA,3.25,NA
+CTTRAC,healthy,healthy,Rocket,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,02/09/21,3/18/21,NA,2.916666667,NA
+VPFHDC,healthy,healthy,Romeo,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,4/22/21,5/4/21,NA,5.5,NA
+AKUTSD,healthy,healthy,Rusty Bucket,Male,Domestic Shorthair,Domestic,No,NA,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,12/20/19,12/31/19,NA,1.916666667,NA
+KE72D3,healthy,healthy,Salk,Male,Domestic Shorthair,Domestic,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,10/6/17,1/8/19,NA,7.92,NA
+WQSXG5,healthy,healthy,Sasha,Female,Siamese,Siamese.Burmese,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,NA,NA,NA,Other,11/2/19,11/8/19,NA,5.08,NA
+HF55BV,healthy,healthy,Shiva,Male,Bengal,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,07/14/18,4/26/19,NA,2.166666667,NA
+V9MMEP,healthy,healthy,Sidney,Female,American Shorthair,Other,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,06/02/20,6/12/20,NA,10.83333333,NA
+9F6AKX,healthy,healthy,Simon,Female,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,3/31/21,4/16/21,NA,8.25,NA
+L8GEUC,healthy,healthy,Snickers,Female,Maine Coon,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,9/20/20,9/25/20,NA,7.58,NA
+XPPMT4,healthy,healthy,Snowy,Male,American Shorthair,Other,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,09/20/20,10/2/20,NA,1.583333333,NA
+7AFUBZ,healthy,healthy,Sofie,Female,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,No,Raw,01/09/21,1/22/21,NA,2.5,NA
+PEMLF7,healthy,healthy,Soze,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,No,Wet.Raw,10/10/17,1/8/19,NA,6.33,NA
+BLANUH,healthy,healthy,Spike,Male,Siamese,Siamese.Burmese,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,5/18/20,11/23/20,NA,3.92,NA
+57J88V,healthy,healthy,Squeeky,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,01/01/17,11/1/19,NA,2.5,NA
+1069CR,healthy,healthy,Stella Kitty,Female,Domestic Longhair,Domestic,Yes,10,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,NA,NA,NA,3,NA
+HEDEJN,healthy,healthy,Stoli,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,10/14/20,10/23/20,NA,1.416666667,NA
+XJ7EHM,healthy,healthy,Story Elburn,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,04/01/21,4/21/21,NA,10.5,NA
+B6W2PD,healthy,healthy,Symphony,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,04/03/19,4/16/19,NA,1.333333333,NA
+37H62V,healthy,healthy,Tabitha,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,Yes,Yes,NA,06/15/17,1/8/19,NA,1.916666667,NA
+DR34F9,healthy,healthy,Taco Whitman,Male,Maine Coon,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,07/16/19,7/18/19,NA,10.91666667,NA
+GKARQT,healthy,healthy,Tao,Male,Siamese,Siamese.Burmese,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,04/22/19,5/2/19,NA,0.916666667,NA
+T9KYVV,healthy,healthy,Tate,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,No,Wet,10/03/20,10/9/20,NA,10.75,NA
+E7MRTL,healthy,healthy,Tater,Male,Maine Coon,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,7/16/19,7/18/19,NA,3.92,NA
+1257CR,healthy,healthy,That One,Female,Domestic Shorthair,Domestic,Yes,11,NA,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,NA,NA,NA,4,NA
+9NCRW9,healthy,healthy,Thor,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,05/13/20,11/23/20,NA,2.916666667,NA
+KZ8TKN,healthy,healthy,Tibbles,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,12/12/19,12/22/19,NA,0.833333333,NA
+KGW4UB,healthy,healthy,Tiger Lily,Male,Maine Coon,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,12/15/20,1/8/21,NA,10,NA
+PXGKUE,healthy,healthy,Toastie,Male,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,01/24/21,2/12/21,NA,1.916666667,NA
+ATALXL,healthy,healthy,Trapper,Male,European Shorthair,Other,No,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,11/27/17,1/8/19,NA,5.83,NA
+9PQWYA,healthy,healthy,Udon,Male,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,09/26/20,10/2/20,NA,2.5,NA
+3DJ8YN,healthy,healthy,Vera,Female,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,7/6/20,12/18/20,NA,4.08,NA
+NTF3FX,healthy,healthy,Vohnkar,Male,Domestic Shorthair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,Yes,Yes,Other,7/20/18,4/16/19,NA,7.33,NA
+J6L2T6,healthy,healthy,Wellington,Male,Domestic Shorthair,Domestic,Yes,NA,4,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,7/16/20,7/24/20,NA,4.83,NA
+J2XEGW,healthy,healthy,Willow,Female,Domestic Shorthair,Domestic,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,Yes,Dry,10/30/19,11/8/19,NA,3.92,NA
+TG66EN,healthy,healthy,Zilla,Female,Domestic Longhair,Domestic,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,09/26/20,12/18/20,NA,2.5,NA
+G3Q5TT,healthy,healthy,Zoey,Female,American Shorthair,Other,Yes,NA,5,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,No,No,No,Other,10/15/20,12/18/20,NA,10.08333333,NA
+8P3RSQ,healthy,healthy,ZsaZsa,Female,American Shorthair,Other,Yes,NA,6,Healthy,Healthy,NA,healthy,No,No,No,No,No,NA,NA,NA,Yes,No,Yes,Wet.Dry,7/17/20,12/18/20,NA,3.42,NA
+FEXXD2,recipient,before,Ah Mui,Female,Domestic Shorthair,Domestic,Yes,8.15,3,Tabitha,Tabitha2,TABITHA,Slight Improvement,Yes,Yes,Yes,No,Yes,Other,28,31,No,Yes,No,Raw,5/28/18,5/16/19,9/7/15,2.67,Responder
+J6NJN9,recipient,after,Ah Mui,Female,Domestic Shorthair,Domestic,Yes,8.15,3,Tabitha,Tabitha2,TABITHA,Slight Improvement,Yes,Yes,Yes,No,Yes,Other,28,31,No,Yes,No,Raw,7/9/18,4/26/19,9/7/15,2.83,Responder
+LRYBM5,recipient,after,Alvin,Male,Domestic Shorthair,Domestic,Yes,10.5,5,Tabitha,Tabitha3,ABC123,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,17,31,No,No,Yes,Dry,2/26/19,3/11/19,5/2/09,9.75,Responder
+QNTQGT,recipient,before,Alvin,Male,Domestic Shorthair,Domestic,Yes,10.5,5,Tabitha,Tabitha3,ABC123,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,17,31,No,No,Yes,Dry,12/1/18,1/21/19,5/2/09,9.5,Responder
+AX5WVE,recipient,after,Andy,Male,Domestic Longhair,Domestic,Yes,8,3,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,29,21,Yes,No,Yes,Wet.Dry,6/30/18,4/26/19,6/1/03,15,Responder
+KMN5AD,recipient,before,Andy,Male,Domestic Longhair,Domestic,Yes,8,3,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,29,21,Yes,No,Yes,Wet.Dry,5/1/18,4/26/19,6/1/03,14.92,Responder
+X5URJ4,recipient,before,Archie,Male,Domestic Shorthair,Domestic,Yes,11,3,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,No,No,No,Yes,Constipation,90,31,Yes,No,Yes,Wet.Dry,3/2/18,4/26/19,1/15/05,13.08,Responder
+XAJXCX,recipient,after,Archie,Male,Domestic Shorthair,Domestic,Yes,11,3,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,No,No,No,Yes,Constipation,90,31,Yes,No,Yes,Wet.Dry,6/4/18,4/26/19,1/15/05,13.33,Responder
+NZ3LSC,recipient,before,Artichoke,Female,Domestic Shorthair,Domestic,Yes,9,4,Tabitha,Tabitha5,N6ZL3K,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,14,49,No,No,Yes,Dry,3/3/19,3/11/19,8/1/08,10.58,Responder
+YNA246,recipient,after,Artichoke,Female,Domestic Shorthair,Domestic,Yes,9,4,Tabitha,Tabitha5,N6ZL3K,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,14,49,No,No,Yes,Dry,4/18/19,4/26/19,8/1/08,10.67,Responder
+19M49U,recipient,before,Audet,Female,Egyptian,Other,Yes,NA,NA,Fabiola,Fabiola,4EXDUK,Improved,Yes,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,No,Yes,Wet.Dry,5/22/17,10/25/19,NA,7,Responder
+77I31V,recipient,after,Audet,Female,Egyptian,Other,Yes,NA,NA,Fabiola,Fabiola,4EXDUK,Improved,Yes,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,No,Yes,Wet.Dry,5/22/17,11/1/19,NA,7,Responder
+MY765J,recipient,after,Azalea,Female,Domestic Shorthair,Domestic,Yes,5,1,Tabitha,Tabitha1,37H62V,Improved,No,Yes,Yes,No,Yes,Other,NA,55,Yes,Yes,No,Wet.Raw,2/16/18,5/31/19,2/6/98,20,Responder
+VYL289,recipient,before,Azalea,Female,Domestic Shorthair,Domestic,Yes,5,1,Tabitha,Tabitha1,37H62V,Improved,No,Yes,Yes,No,Yes,Other,NA,55,Yes,Yes,No,Wet.Raw,3/1/18,10/11/19,2/6/98,20,Responder
+12A10A,recipient,after,Bo,Male,Domestic Shorthair,Domestic,Yes,12,5,Fiogus,Fiogus2,RVDKDV,Improved,No,Yes,No,Yes,No,Diarrhea,NA,18,Yes,No,No,Wet,4/24/17,11/1/19,3/2/12,5.08,Responder
+76P12B,recipient,before,Bo,Male,Domestic Shorthair,Domestic,Yes,12,5,Fiogus,Fiogus2,RVDKDV,Improved,No,Yes,No,Yes,No,Diarrhea,NA,18,Yes,No,No,Wet,3/19/17,11/1/19,3/2/12,5,Responder
+4UWGFX,recipient,before,Bosco,Male,Domestic Shorthair,Domestic,Yes,11.72,5,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,NA,27,Yes,No,No,Wet,4/6/18,7/1/19,4/12/09,8.92,Responder
+Y7VG74,recipient,after,Bosco,Male,Domestic Shorthair,Domestic,Yes,11.72,5,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,NA,27,Yes,No,No,Wet,9/27/17,5/2/19,4/12/09,8.42,Responder
+KLSAFA,recipient,after,Bug,Male,Domestic Longhair,Domestic,Yes,13.8,4,Tabitha,Tabitha1,37H62V,Improved,Yes,No,No,No,Yes,Constipation,NA,14,Yes,Yes,Yes,Other,11/27/17,6/14/19,3/17/10,7.67,Responder
+UUMQ5L,recipient,before,Bug,Male,Domestic Longhair,Domestic,Yes,13.8,4,Tabitha,Tabitha1,37H62V,Improved,Yes,No,No,No,Yes,Constipation,NA,14,Yes,Yes,Yes,Other,10/18/17,5/23/19,3/17/10,7.58,Responder
+DXCDNS,recipient,before,Bugsy,Male,Ragdoll,Ragdoll,Yes,12.8,7,Scylla,Scylla1,81H86J,Improved,Maybe,No,No,No,No,Other,NA,NA,No,Yes,No,Raw,8/7/17,9/27/19,5/1/06,11.25,Responder
+NEQQA9,recipient,after,Bugsy,Male,Ragdoll,Ragdoll,Yes,12.8,7,Scylla,Scylla1,81H86J,Improved,Maybe,No,No,No,No,Other,NA,NA,No,Yes,No,Raw,8/7/17,9/27/19,5/1/06,11.25,Responder
+33Q18M,recipient,after,Calisto,Male,Domestic Shorthair,Domestic,Yes,11.5,5,Fabiola,Fabiola,4EXDUK,No Change,Yes,No,No,No,Yes,Constipation,NA,24,No,Yes,No,Raw,9/15/17,5/31/19,8/1/04,13.08,Non-Responder
+38L11B,recipient,before,Calisto,Male,Domestic Shorthair,Domestic,Yes,11.5,5,Fabiola,Fabiola,4EXDUK,No Change,Yes,No,No,No,Yes,Constipation,NA,24,No,Yes,No,Raw,6/2/17,5/23/19,8/1/04,12.83,Non-Responder
+30J83D,recipient,before,Chandra,Male,Domestic Shorthair,Domestic,Yes,14,8,Fabiola,Fabiola,4EXDUK,Improved,No,No,Yes,No,No,Other,NA,NA,Yes,No,No,Wet,5/8/17,10/23/19,1/1/00,17.33,Responder
+82U49Q,recipient,after,Chandra,Male,Domestic Shorthair,Domestic,Yes,14,8,Fabiola,Fabiola,4EXDUK,Improved,No,No,Yes,No,No,Other,NA,NA,Yes,No,No,Wet,5/8/17,10/23/19,1/1/00,17.33,Responder
+LAJZ8W,recipient,before,Charlie,Male,Siberian,Norwegian.Siberian,Yes,NA,4,Tabitha,Tabitha1,37H62V,Worsened,No,NA,No,Yes,No,Diarrhea,13,31,No,No,Yes,Dry,9/6/17,5/23/19,NA,0.67,Non-Responder
+LPJXGH,recipient,after,Charlie,Male,Siberian,Norwegian.Siberian,Yes,NA,4,Tabitha,Tabitha1,37H62V,Worsened,No,NA,No,Yes,No,Diarrhea,13,31,No,No,Yes,Dry,9/6/17,5/23/19,NA,0.67,Non-Responder
+4JPF3R,recipient,after,Chase,Male,Unknown,Other,Yes,8.2,4,Tabitha,Tabitha4,97FXPV,No Change,No,No,No,Yes,No,Diarrhea,14,NA,Yes,No,Yes,Wet.Dry,10/6/18,4/30/19,3/1/11,7.58,Non-Responder
+N47K8B,recipient,before,Chase,Male,Unknown,Other,Yes,8.2,4,Tabitha,Tabitha4,97FXPV,No Change,No,No,No,Yes,No,Diarrhea,14,NA,Yes,No,Yes,Wet.Dry,8/27/18,3/25/19,3/1/11,7.42,Non-Responder
+LD65YF,recipient,before,Chauncey,Male,Domestic Shorthair,Domestic,Yes,9.12,4,Tabitha,Tabitha5,N6ZL3K,Worsened,Maybe,No,No,No,No,Other,20,NA,Yes,No,No,Wet,5/19/19,5/31/19,6/11/02,16.92,Non-Responder
+LWX4ME,recipient,after,Chauncey,Male,Domestic Shorthair,Domestic,Yes,9.12,4,Tabitha,Tabitha5,N6ZL3K,Worsened,Maybe,No,No,No,No,Other,20,NA,Yes,No,No,Wet,7/2/19,7/12/19,6/11/02,17,Non-Responder
+11F65E,recipient,before,Chaz,Female,Siamese,Siamese.Burmese,Yes,9.25,6,Fabiola,Fabiola,4EXDUK,Improved,Yes,No,No,No,Yes,Constipation,15,30,Yes,Yes,No,Wet.Raw,3/27/17,10/25/19,3/30/07,9.92,Responder
+89Q96Z,recipient,after,Chaz,Female,Siamese,Siamese.Burmese,Yes,9.25,6,Fabiola,Fabiola,4EXDUK,Improved,Yes,No,No,No,Yes,Constipation,15,30,Yes,Yes,No,Wet.Raw,4/29/17,10/25/19,3/30/07,10,Responder
+1570CR,recipient,before,Chelsea,Female,Domestic Longhair,Domestic,Yes,NA,5,Fabiola,Fabiola,4EXDUK,Improved,Yes,No,Yes,Yes,No,VomDiarr,NA,NA,No,Yes,No,Raw,NA,1/8/19,NA,11.9,Responder
+1598CR,recipient,after,Chelsea,Female,Domestic Longhair,Domestic,Yes,NA,5,Fabiola,Fabiola,4EXDUK,Improved,Yes,No,Yes,Yes,No,VomDiarr,NA,NA,No,Yes,No,Raw,6/26/17,9/8/21,NA,11.9,Responder
+76XA47,recipient,before,Choco Merrill,Male,Domestic Shorthair,Domestic,Yes,8.5,5,Eddie,Eddie,NPJ654,Slight Improvement,Yes,No,No,Yes,No,Diarrhea,NA,31,Yes,No,Yes,Wet.Dry,5/6/19,5/10/19,4/9/15,4,Responder
+DN635S,recipient,after,Choco Merrill,Male,Domestic Shorthair,Domestic,Yes,8.5,5,Eddie,Eddie,NPJ654,Slight Improvement,Yes,No,No,Yes,No,Diarrhea,NA,31,Yes,No,Yes,Wet.Dry,6/24/19,7/1/19,4/9/15,4.17,Responder
+K2DT4U,recipient,before,Christopher,Male,Domestic Shorthair,Domestic,Yes,11,5,Tabitha,Tabitha1,37H62V,Slight Improvement,No,No,No,No,Yes,Constipation,NA,17,No,Yes,No,Raw,9/27/17,6/26/19,2/1/07,10.58,Responder
+ZDLKNZ,recipient,after,Christopher,Male,Domestic Shorthair,Domestic,Yes,11,5,Tabitha,Tabitha1,37H62V,Slight Improvement,No,No,No,No,Yes,Constipation,NA,17,No,Yes,No,Raw,9/27/17,6/14/19,2/1/07,10.58,Responder
+GXY7MQ,recipient,before,Cinders,Female,Maine Coon,Other,Yes,5,2,Fabiola,Fabiola,4EXDUK,Improved,Maybe,No,Yes,Yes,No,VomDiarr,32,25,Yes,No,Yes,Wet.Dry,8/4/17,10/25/19,5/11/04,13.17,Responder
+PB2QMB,recipient,after,Cinders,Female,Maine Coon,Other,Yes,5,2,Fabiola,Fabiola,4EXDUK,Improved,Maybe,No,Yes,Yes,No,VomDiarr,32,25,Yes,No,Yes,Wet.Dry,9/19/17,9/8/21,5/11/04,13.33,Responder
+PREQRX,recipient,before,Doodie,Female,Siamese Mix,Siamese.Burmese,Yes,17,6,Tabitha,Tabitha1,37H62V,Improved,Yes,No,Yes,Yes,No,VomDiarr,21,62,No,Yes,Yes,Other,4/6/18,3/25/19,1/1/09,9.25,Responder
+TJJ6PC,recipient,after,Doodie,Female,Siamese Mix,Siamese.Burmese,Yes,17,6,Tabitha,Tabitha1,37H62V,Improved,Yes,No,Yes,Yes,No,VomDiarr,21,62,No,Yes,Yes,Other,8/4/18,3/25/19,1/1/09,9.58,Responder
+M7JLN7,recipient,after,Ender,Male,Domestic Shorthair,Domestic,Yes,14,7,Tabitha,Tabitha1,37H62V,Improved,Yes,No,Yes,Yes,No,VomDiarr,60,NA,Yes,No,No,Wet,10/13/17,6/14/19,8/2/05,12.17,Responder
+ZSBNGL,recipient,before,Ender,Male,Domestic Shorthair,Domestic,Yes,14,7,Tabitha,Tabitha1,37H62V,Improved,Yes,No,Yes,Yes,No,VomDiarr,60,NA,Yes,No,No,Wet,10/17/17,6/14/19,8/2/05,12.17,Responder
+H2Z9XF,recipient,before,Errol,Male,Domestic Shorthair,Domestic,Yes,10,5,Augustanor,Augustanor4.Augustanor5.Augustanor2,TND32W. M4PSSS. 9QVBFP,Slight Improvement,Yes,No,Yes,No,Yes,Other,15,25,No,Yes,Yes,Other,4/11/19,4/26/19,11/1/10,8.42,Responder
+N9QXJE,recipient,after,Errol,Male,Domestic Shorthair,Domestic,Yes,10,5,Augustanor,Augustanor4.Augustanor5.Augustanor2,TND32W. M4PSSS. 9QVBFP,Slight Improvement,Yes,No,Yes,No,Yes,Other,15,25,No,Yes,Yes,Other,5/22/19,5/31/19,11/1/10,8.5,Responder
+LYM5LS,recipient,after,Fluffy,Female,Domestic Shorthair,Domestic,Yes,6.6,3,Tabitha,Tabitha2,TABITHA,No Change,Yes,No,No,Yes,No,Diarrhea,15,NA,Yes,No,Yes,Wet.Dry,9/9/18,4/30/19,4/1/13,5.42,Non-Responder
+SHK97M,recipient,before,Fluffy,Female,Domestic Shorthair,Domestic,Yes,6.6,3,Tabitha,Tabitha2,TABITHA,No Change,Yes,No,No,Yes,No,Diarrhea,15,NA,Yes,No,Yes,Wet.Dry,8/1/18,4/30/19,4/1/13,5.33,Non-Responder
+YECK53,recipient,after,Frankie,Male,Domestic Shorthair,Domestic,Yes,7,5,Scylla,Scylla2,DKAYXQ,Slight Improvement,Maybe,Yes,No,Yes,No,Diarrhea,37,31,Yes,No,Yes,Wet.Dry,5/4/18,1/10/20,7/24/17,0.75,Responder
+YRHHAN,recipient,before,Frankie,Male,Domestic Shorthair,Domestic,Yes,7,5,Scylla,Scylla2,DKAYXQ,Slight Improvement,Maybe,Yes,No,Yes,No,Diarrhea,37,31,Yes,No,Yes,Wet.Dry,3/15/18,7/1/19,7/24/17,0.58,Responder
+BSDNQ2,recipient,after,Goldy,Male,Domestic Shorthair,Domestic,Yes,16,8,Fiogus,Fiogus1.Fiogus3.,FEVEUG. HGRAPM,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,16,21,No,No,Yes,Dry,5/10/18,5/2/19,1/1/07,11.33,Responder
+TRLQPA,recipient,before,Goldy,Male,Domestic Shorthair,Domestic,Yes,16,8,Fiogus,Fiogus1.Fiogus3.,FEVEUG. HGRAPM,Improved,Yes,Yes,Yes,Yes,No,VomDiarr,16,21,No,No,Yes,Dry,3/30/18,4/16/19,1/1/07,11.17,Responder
+46X60G,recipient,after,Hershey,Male,Domestic Shorthair,Domestic,Yes,11,4,Fabiola,Fabiola,4EXDUK,Improved,Maybe,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,Yes,No,Wet.Raw,4/24/17,11/1/19,4/1/05,12,Responder
+79M45I,recipient,before,Hershey,Male,Domestic Shorthair,Domestic,Yes,11,4,Fabiola,Fabiola,4EXDUK,Improved,Maybe,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,Yes,No,Wet.Raw,4/17/17,11/1/19,4/1/05,12,Responder
+3LF5E2,recipient,after,Isis,Female,Domestic Shorthair,Domestic,Yes,7,NA,Scylla,Scylla1,81H86J,Improved,No,No,No,Yes,No,Diarrhea,62,NA,No,No,Yes,Dry,9/1/17,11/1/19,5/1/03,14.33,Responder
+KTYS7V,recipient,before,Isis,Female,Domestic Shorthair,Domestic,Yes,7,NA,Scylla,Scylla1,81H86J,Improved,No,No,No,Yes,No,Diarrhea,62,NA,No,No,Yes,Dry,8/1/17,9/8/21,5/1/03,14.25,Responder
+N996A9,recipient,before,Jackpot,Male,Domestic Shorthair,Domestic,Yes,13.3,3,Tabitha,Tabitha2,TABITHA,No Change,Yes,Yes,Yes,Yes,No,VomDiarr,NA,NA,Yes,No,Yes,Wet.Dry,7/30/18,4/9/19,4/1/04,14.25,Non-Responder
+TMQ6TQ,recipient,after,Jackpot,Male,Domestic Shorthair,Domestic,Yes,13.3,3,Tabitha,Tabitha2,TABITHA,No Change,Yes,Yes,Yes,Yes,No,VomDiarr,NA,NA,Yes,No,Yes,Wet.Dry,7/16/18,4/1/19,4/1/04,14.25,Non-Responder
+SUBB5Q,recipient,after,Kalo,Male,Siamese,Siamese.Burmese,Yes,15,3,Fiogus,Fiogus1.Fiogus3.,FEVEUG. HGRAPM,Improved,Yes,No,Yes,Yes,No,VomDiarr,14,91,Yes,No,Yes,Wet.Dry,3/13/18,4/26/19,7/4/12,5.67,Responder
+XVYHZE,recipient,before,Kalo,Male,Siamese,Siamese.Burmese,Yes,15,3,Fiogus,Fiogus1.Fiogus3.,FEVEUG. HGRAPM,Improved,Yes,No,Yes,Yes,No,VomDiarr,14,91,Yes,No,Yes,Wet.Dry,4/13/18,4/16/19,7/4/12,5.75,Responder
+3FQYF,recipient,before,Keilana,Female,Bengal,Other,Yes,7,4,Fiogus,Fiogus2,RVDKDV,Improved,Yes,No,No,Yes,No,Diarrhea,NA,16,Yes,Yes,No,Wet.Raw,4/11/17,10/18/19,10/7/04,12.5,Responder
+S3QZV,recipient,after,Keilana,Female,Bengal,Other,Yes,7,4,Fiogus,Fiogus2,RVDKDV,Improved,Yes,No,No,Yes,No,Diarrhea,NA,16,Yes,Yes,No,Wet.Raw,4/11/17,4/1/19,10/7/04,12.5,Responder
+2EV4K2,recipient,after,Klaus,Male,Domestic Shorthair,Domestic,Yes,12,5,Tabitha,Tabitha1,37H62V,No Change,Yes,No,No,Yes,No,Diarrhea,28,NA,Yes,No,Yes,Wet.Dry,3/13/18,4/26/19,5/20/10,7.75,Non-Responder
+LV4WDE,recipient,before,Klaus,Male,Domestic Shorthair,Domestic,Yes,12,5,Tabitha,Tabitha1,37H62V,No Change,Yes,No,No,Yes,No,Diarrhea,28,NA,Yes,No,Yes,Wet.Dry,3/13/18,4/26/19,5/20/10,7.75,Non-Responder
+ALLRHN,recipient,before,Kweetie,Female,Domestic Shorthair,Domestic,Yes,8,3,Tabitha,Tabitha2,TABITHA,Worsened,Yes,Yes,Yes,Yes,No,VomDiarr,31,NA,Yes,Yes,Yes,Other,7/28/18,4/9/19,6/11/05,13.08,Non-Responder
+NV36VQ,recipient,after,Kweetie,Female,Domestic Shorthair,Domestic,Yes,8,3,Tabitha,Tabitha2,TABITHA,Worsened,Yes,Yes,Yes,Yes,No,VomDiarr,31,NA,Yes,Yes,Yes,Other,9/10/18,4/30/19,6/11/05,13.17,Non-Responder
+QZVQUN,recipient,before,Lada,Female,Siberian,Norwegian.Siberian,Yes,11,7,Tabitha,Tabitha3,ABC123,No Change,Maybe,No,Yes,Yes,No,VomDiarr,90,NA,No,Yes,No,Raw,9/9/18,3/17/19,12/21/09,8.67,Non-Responder
+T4PAE6,recipient,after,Lada,Female,Siberian,Norwegian.Siberian,Yes,11,7,Tabitha,Tabitha3,ABC123,No Change,Maybe,No,Yes,Yes,No,VomDiarr,90,NA,No,Yes,No,Raw,12/8/18,6/14/19,12/21/09,8.92,Non-Responder
+59P28S,recipient,before,Leonidas,Male,Russian Blue Mix,Other,Yes,5.31,NA,Fabiola,Fabiola,4EXDUK,Improved,Yes,Yes,No,Yes,No,Diarrhea,NA,15,No,Yes,No,Raw,6/5/17,9/13/19,3/26/09,8.17,Responder
+67K87X,recipient,after,Leonidas,Male,Russian Blue Mix,Other,Yes,5.31,NA,Fabiola,Fabiola,4EXDUK,Improved,Yes,Yes,No,Yes,No,Diarrhea,NA,15,No,Yes,No,Raw,6/5/17,9/13/19,3/26/09,8.17,Responder
+75I11I,recipient,before,Lola,Female,Ragdoll,Ragdoll,Yes,10,5,Scylla,Scylla1,81H86J,Improved,Maybe,No,Yes,Yes,No,VomDiarr,NA,25,Yes,Yes,No,Wet.Raw,7/14/17,5/23/19,5/1/09,8.17,Responder
+78M12V,recipient,after,Lola,Female,Ragdoll,Ragdoll,Yes,10,5,Scylla,Scylla1,81H86J,Improved,Maybe,No,Yes,Yes,No,VomDiarr,NA,25,Yes,Yes,No,Wet.Raw,8/18/17,5/23/19,5/1/09,8.25,Responder
+CRX86Z,recipient,after,Mac,Male,Ragdoll,Ragdoll,Yes,14,7,Scylla,Scylla1,81H86J,Improved,No,No,No,No,Yes,Constipation,NA,NA,No,Yes,No,Raw,8/7/17,9/8/21,7/30/08,9,Responder
+D4L6GB,recipient,before,Mac,Male,Ragdoll,Ragdoll,Yes,14,7,Scylla,Scylla1,81H86J,Improved,No,No,No,No,Yes,Constipation,NA,NA,No,Yes,No,Raw,8/7/17,9/27/19,7/30/08,9,Responder
+8Q9FVD,recipient,before,Magdalina,Female,Domestic Longhair,Domestic,Yes,9,7,Pinky,Pinky,H43CJ3,Slight Improvement,Maybe,No,No,No,Yes,Constipation,NA,21,Yes,Yes,No,Wet.Raw,12/11/18,1/24/19,7/1/11,7.42,Responder
+MBQL6W,recipient,after,Magdalina,Female,Domestic Longhair,Domestic,Yes,9,7,Pinky,Pinky,H43CJ3,Slight Improvement,Maybe,No,No,No,Yes,Constipation,NA,21,Yes,Yes,No,Wet.Raw,1/30/19,3/1/19,7/1/11,7.5,Responder
+9B5NMR,recipient,after,Mia,Female,Bombay,Siamese.Burmese,Yes,8,5,Tabitha,Tabitha1,37H62V,No Change,No,Yes,No,Yes,No,Diarrhea,14,NA,Yes,No,Yes,Wet.Dry,9/18/18,3/25/19,9/24/14,3.92,Non-Responder
+WXS7RM,recipient,before,Mia,Female,Bombay,Siamese.Burmese,Yes,8,5,Tabitha,Tabitha1,37H62V,No Change,No,Yes,No,Yes,No,Diarrhea,14,NA,Yes,No,Yes,Wet.Dry,9/20/18,3/17/19,9/24/14,3.92,Non-Responder
+47A2MX,recipient,after,Miette,Female,Birman Japanese BobTail Mix,Siamese.Burmese,Yes,8,5,Tabitha,Tabitha3,ABC123,Improved,No,Yes,No,Yes,Yes,Other,20,31,Yes,Yes,Yes,Other,11/13/18,1/30/19,12/1/15,2.92,Responder
+UFRA4P,recipient,before,Miette,Female,Birman Japanese BobTail Mix,Siamese.Burmese,Yes,8,5,Tabitha,Tabitha3,ABC123,Improved,No,Yes,No,Yes,Yes,Other,20,31,Yes,Yes,Yes,Other,9/24/18,3/25/19,12/1/15,2.75,Responder
+59D28K,recipient,after,Mintie,Female,Domestic Shorthair,Domestic,Yes,10,5,Fabiola,Fabiola,4EXDUK,Worsened,No,No,Yes,Yes,No,VomDiarr,NA,7,No,Yes,No,Raw,3/30/17,9/6/19,12/31/07,9.17,Non-Responder
+A1RN3,recipient,before,Mintie,Female,Domestic Shorthair,Domestic,Yes,10,5,Fabiola,Fabiola,4EXDUK,Worsened,No,No,Yes,Yes,No,VomDiarr,NA,7,No,Yes,No,Raw,3/31/17,10/18/19,12/31/07,9.25,Non-Responder
+BAVTAK,recipient,before,Misha,Male,Domestic Shorthair,Domestic,Yes,9,4,Scylla,Scylla1,81H86J,No Change,Yes,Yes,No,Yes,No,Diarrhea,30,NA,Yes,No,Yes,Wet.Dry,12/23/17,6/26/19,11/13/01,16.08,Non-Responder
+BV9MJ9,recipient,after,Misha,Male,Domestic Shorthair,Domestic,Yes,9,4,Scylla,Scylla1,81H86J,No Change,Yes,Yes,No,Yes,No,Diarrhea,30,NA,Yes,No,Yes,Wet.Dry,2/27/18,6/6/19,11/13/01,16.25,Non-Responder
+F56663,recipient,after,Mitsu,Male,Domestic Shorthair,Domestic,Yes,9,5,Tabitha,Tabitha2,TABITHA,Improved,No,Yes,No,Yes,No,Diarrhea,17,26,Yes,No,Yes,Wet.Dry,7/31/18,4/9/19,8/1/17,0.92,Responder
+ST7CQ7,recipient,before,Mitsu,Male,Domestic Shorthair,Domestic,Yes,9,5,Tabitha,Tabitha2,TABITHA,Improved,No,Yes,No,Yes,No,Diarrhea,17,26,Yes,No,Yes,Wet.Dry,6/21/18,5/16/19,8/1/17,0.83,Responder
+7RJU52,recipient,after,Morrigan,Female,American Shorthair,Other,Yes,7.7,3,Tabitha,Tabitha1,37H62V,No Change,Yes,Yes,No,Yes,No,Diarrhea,NA,20,Yes,No,Yes,Wet.Dry,10/21/17,5/23/19,4/15/02,15.5,Non-Responder
+AZS5BR,recipient,before,Morrigan,Female,American Shorthair,Other,Yes,7.7,3,Tabitha,Tabitha1,37H62V,No Change,Yes,Yes,No,Yes,No,Diarrhea,NA,20,Yes,No,Yes,Wet.Dry,9/22/17,7/12/19,4/15/02,15.42,Non-Responder
+15X74K,recipient,after,Nyssa,Female,American Shorthair,Other,Yes,13,7,Scylla,Scylla1,81H86J,Slight Improvement,No,No,Yes,Yes,No,VomDiarr,NA,31,Yes,No,Yes,Wet.Dry,8/13/17,7/12/19,6/1/11,6.17,Responder
+20A15J,recipient,before,Nyssa,Female,American Shorthair,Other,Yes,13,7,Scylla,Scylla1,81H86J,Slight Improvement,No,No,Yes,Yes,No,VomDiarr,NA,31,Yes,No,Yes,Wet.Dry,6/26/17,5/23/19,6/1/11,6,Responder
+66V19G,recipient,before,Oliver Twist,Male,Burmese,Siamese.Burmese,Yes,NA,5,Lolita,Lolita,UCKDJU,Improved,No,Yes,No,Yes,No,Diarrhea,NA,NA,No,Yes,No,Raw,5/8/17,10/23/19,NA,0.42,Responder
+97X70F,recipient,after,Oliver Twist,Male,Burmese,Siamese.Burmese,Yes,NA,5,Lolita,Lolita,UCKDJU,Improved,No,Yes,No,Yes,No,Diarrhea,NA,NA,No,Yes,No,Raw,5/8/17,10/23/19,NA,0.42,Responder
+MKEAZD,recipient,after,Pamunkey,Male,Turkish Van,Other,Yes,8.25,4,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,38,26,Yes,Yes,Yes,Other,6/15/18,4/26/19,9/21/05,12.67,Responder
+TY4N76,recipient,before,Pamunkey,Male,Turkish Van,Other,Yes,8.25,4,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,38,26,Yes,Yes,Yes,Other,5/4/18,4/26/19,9/21/05,12.58,Responder
+5LTJK2,recipient,before,Parker,Male,Domestic Shorthair,Domestic,Yes,9.5,5,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,Yes,Yes,No,VomDiarr,23,34,Yes,No,Yes,Wet.Dry,12/3/17,6/14/19,5/15/12,5.5,Responder
+ZCPQXM,recipient,after,Parker,Male,Domestic Shorthair,Domestic,Yes,9.5,5,Tabitha,Tabitha1,37H62V,Slight Improvement,Yes,Yes,Yes,Yes,No,VomDiarr,23,34,Yes,No,Yes,Wet.Dry,1/31/18,6/14/19,5/15/12,5.67,Responder
+8QCNAE,recipient,after,Pearl,Female,Domestic Shorthair,Domestic,Yes,5.2,4,Tabitha,Tabitha1,37H62V,Improved,No,Yes,No,Yes,No,Diarrhea,NA,62,Yes,No,No,Wet,5/8/18,5/10/19,8/28/17,0.67,Responder
+F73F6W,recipient,before,Pearl,Female,Domestic Shorthair,Domestic,Yes,5.2,4,Tabitha,Tabitha1,37H62V,Improved,No,Yes,No,Yes,No,Diarrhea,NA,62,Yes,No,No,Wet,2/28/18,6/6/19,8/28/17,0.5,Responder
+BU626W,recipient,before,Poe,Male,Domestic Shorthair,Domestic,Yes,10,5,Augustanor,Augustanor3.Augustanor1.Augustanor5,KS28KN. TLDR72. M4PSSS,Slight Improvement,Maybe,No,Yes,Yes,No,VomDiarr,16,31,No,No,Yes,Dry,7/22/18,4/16/19,7/4/08,10,Responder
+YGFJEU,recipient,after,Poe,Male,Domestic Shorthair,Domestic,Yes,10,5,Augustanor,Augustanor3.Augustanor1.Augustanor5,KS28KN. TLDR72. M4PSSS,Slight Improvement,Maybe,No,Yes,Yes,No,VomDiarr,16,31,No,No,Yes,Dry,11/11/18,3/9/19,7/4/08,10.33,Responder
+28D65E,recipient,after,Princess Leia,Female,Norwegian Forest cat,Norwegian.Siberian,Yes,3.31,NA,Fabiola,Fabiola,4EXDUK,Improved,No,No,No,Yes,No,Diarrhea,NA,15,No,Yes,Yes,Other,6/5/17,9/13/19,7/31/15,1.83,Responder
+49T46H,recipient,before,Princess Leia,Female,Norwegian Forest cat,Norwegian.Siberian,Yes,3.31,NA,Fabiola,Fabiola,4EXDUK,Improved,No,No,No,Yes,No,Diarrhea,NA,15,No,Yes,Yes,Other,6/5/17,9/13/19,7/31/15,1.83,Responder
+35C71O,recipient,before,Pussycat,Male,Domestic Shorthair,Domestic,Yes,14,0,Scylla,Scylla1,81H86J,Improved,No,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,Yes,Yes,Other,5/7/17,9/6/19,1/1/01,16.33,Responder
+61L64S,recipient,after,Pussycat,Male,Domestic Shorthair,Domestic,Yes,14,5,Scylla,Scylla1,81H86J,Improved,No,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,Yes,Yes,Other,6/3/17,9/6/19,1/1/01,16.42,Responder
+2KQYAZ,recipient,after,Pyxie,Female,Siamese,Siamese.Burmese,Yes,8,4,Scylla,Scylla1,81H86J,Slight Improvement,No,Yes,No,Yes,No,Diarrhea,3,20,Yes,Yes,No,Wet.Raw,9/21/17,11/1/19,10/1/13,3.92,Responder
+95Q5RB,recipient,before,Pyxie,Female,Siamese,Siamese.Burmese,Yes,8,4,Scylla,Scylla1,81H86J,Slight Improvement,No,Yes,No,Yes,No,Diarrhea,3,20,Yes,Yes,No,Wet.Raw,8/28/17,10/4/19,10/1/13,3.83,Responder
+5SXN92,recipient,before,Riceball,Male,Domestic Shorthair,Domestic,Yes,13,6,Tabitha,Tabitha1,37H62V,Improved,Yes,No,No,No,Yes,Constipation,14,25,No,Yes,No,Raw,9/28/17,6/26/19,4/1/07,10.42,Responder
+S77QJU,recipient,after,Riceball,Male,Domestic Shorthair,Domestic,Yes,13,6,Tabitha,Tabitha1,37H62V,Improved,Yes,No,No,No,Yes,Constipation,14,25,No,Yes,No,Raw,9/27/17,10/18/19,4/1/07,10.42,Responder
+89VZ6Y,recipient,before,Spanky,Male,Domestic Shorthair,Domestic,Yes,9,4,Eddie,Eddie,NPJ654,No Change,Maybe,No,No,Yes,No,Diarrhea,4,NA,Yes,No,No,Wet,6/18/19,7/1/19,2/18/09,10.33,Non-Responder
+XBJBYU,recipient,after,Spanky,Male,Domestic Shorthair,Domestic,Yes,9,4,Eddie,Eddie,NPJ654,No Change,Maybe,No,No,Yes,No,Diarrhea,4,NA,Yes,No,No,Wet,7/4/19,7/18/19,2/18/09,10.33,Non-Responder
+39W26J,recipient,after,Sula,Female,Domestic Shorthair,Domestic,Yes,12,5,Fabiola,Fabiola,4EXDUK,Slight Improvement,Maybe,Yes,No,No,Yes,Constipation,NA,NA,No,Yes,No,Raw,6/21/17,9/6/19,1/7/04,13.42,Responder
+48F14W,recipient,before,Sula,Female,Domestic Shorthair,Domestic,Yes,12,5,Fabiola,Fabiola,4EXDUK,Slight Improvement,Maybe,Yes,No,No,Yes,Constipation,NA,NA,No,Yes,No,Raw,6/21/17,9/6/19,1/7/04,13.42,Responder
+4PVMC7,recipient,after,Sylvester,Male,Domestic Shorthair,Domestic,Yes,12.75,3,Tabitha,Tabitha1,37H62V,No Change,Yes,Yes,Yes,Yes,No,VomDiarr,2,NA,Yes,No,Yes,Wet.Dry,3/13/18,7/1/19,5/13/07,10.83,Non-Responder
+URUMDT,recipient,before,Sylvester,Male,Domestic Shorthair,Domestic,Yes,12.75,3,Tabitha,Tabitha1,37H62V,No Change,Yes,Yes,Yes,Yes,No,VomDiarr,2,NA,Yes,No,Yes,Wet.Dry,4/4/18,7/1/19,5/13/07,10.83,Non-Responder
+K7TWS5,recipient,before,Sylvie,Female,Domestic Shorthair,Domestic,Yes,10.2,6,Tabitha,Tabitha1,37H62V,Slight Improvement,No,No,No,Yes,Yes,Other,NA,25,Yes,Yes,No,Wet.Raw,10/23/17,5/23/19,4/20/15,2.5,Responder
+QJ45C8,recipient,after,Sylvie,Female,Domestic Shorthair,Domestic,Yes,10.2,6,Tabitha,Tabitha1,37H62V,Slight Improvement,No,No,No,Yes,Yes,Other,NA,25,Yes,Yes,No,Wet.Raw,11/27/17,6/14/19,4/20/15,2.58,Responder
+2HH288,recipient,after,Tabbytha,Female,Domestic Shorthair,Domestic,Yes,10,7,Tabitha,Tabitha2,TABITHA,Improved,Yes,Yes,No,No,Yes,Constipation,14,31,No,Yes,No,Raw,7/31/18,1/8/19,2/17/01,17.42,Responder
+BMKJ79,recipient,before,Tabbytha,Female,Domestic Shorthair,Domestic,Yes,10,7,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,No,No,Yes,Constipation,14,31,No,Yes,No,Raw,10/7/17,5/23/19,2/17/01,16.58,Responder
+DZ9BTB,recipient,after,Tabbytha,Female,Domestic Shorthair,Domestic,Yes,10,7,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,No,No,Yes,Constipation,14,31,No,Yes,No,Raw,11/19/17,6/14/19,2/17/01,16.75,Responder
+NHHXZN,recipient,before,Tabbytha,Female,Domestic Shorthair,Domestic,Yes,10,7,Tabitha,Tabitha2,TABITHA,Improved,Yes,Yes,No,No,Yes,Constipation,14,31,No,Yes,No,Raw,6/9/18,4/26/19,2/17/01,17.25,Responder
+6TD887,recipient,before,Tenga,Female,Domestic Shorthair,Domestic,Yes,10.5,6,Scylla,Scylla1,81H86J,Improved,Maybe,No,No,Yes,No,Diarrhea,21,42,No,Yes,No,Raw,8/18/17,8/2/19,4/29/02,15.25,Responder
+N3X66G,recipient,after,Tenga,Female,Domestic Shorthair,Domestic,Yes,10.5,6,Scylla,Scylla1,81H86J,Improved,Maybe,No,No,Yes,No,Diarrhea,21,42,No,Yes,No,Raw,10/12/17,5/23/19,4/29/02,15.42,Responder
+EPURPL,recipient,after,Tequila,Male,Domestic Longhair,Domestic,Yes,4.02,5,Tabitha,Tabitha6,6RBA2U,Worsened,Yes,Yes,Yes,No,Yes,Other,16,NA,No,Yes,No,Raw,6/17/19,7/1/19,2/21/07,12.25,Non-Responder
+JS2U5E,recipient,before,Tequila,Male,Domestic Longhair,Domestic,Yes,4.02,5,Tabitha,Tabitha6,6RBA2U,Worsened,Yes,Yes,Yes,No,Yes,Other,16,NA,No,Yes,No,Raw,3/25/19,4/9/19,2/21/07,12.08,Non-Responder
+3ZG4R,recipient,before,Thelma,Female,Domestic Shorthair,Domestic,Yes,11,6,Lolita,Lolita,UCKDJU,Slight Improvement,Maybe,No,No,Yes,No,Diarrhea,NA,7,Yes,Yes,No,Wet.Raw,4/11/17,10/18/19,1/1/02,15.25,Responder
+4RYEA,recipient,after,Thelma,Female,Domestic Shorthair,Domestic,Yes,11,6,Lolita,Lolita,UCKDJU,Slight Improvement,Maybe,No,No,Yes,No,Diarrhea,NA,7,Yes,Yes,No,Wet.Raw,4/11/17,10/18/19,1/1/02,15.25,Responder
+2S7DCU,recipient,after,Tilda,Female,Domestic Shorthair,Domestic,Yes,8,5,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,No,Yes,No,Diarrhea,15,50,Yes,No,Yes,Wet.Dry,3/1/18,6/14/19,1/5/13,5.08,Responder
+LKWMS6,recipient,before,Tilda,Female,Domestic Shorthair,Domestic,Yes,8,5,Tabitha,Tabitha1,37H62V,Improved,Yes,Yes,No,Yes,No,Diarrhea,15,50,Yes,No,Yes,Wet.Dry,12/28/17,6/26/19,1/5/13,4.92,Responder
+48PPPH,recipient,after,Toko,Male,Bengal,Other,Yes,10,4,Augustanor,Augustanor3.Augustanor1.Augustanor5,KS28KN. TLDR72. M4PSSS,Improved,Yes,Yes,No,Yes,No,Diarrhea,20,31,No,No,Yes,Dry,9/29/18,4/30/19,3/19/11,7.5,Responder
+9KKPUS,recipient,before,Toko,Male,Bengal,Other,Yes,10,4,Augustanor,Augustanor3.Augustanor1.Augustanor5,KS28KN.TLDR72. M4PSSS,Improved,Yes,Yes,No,Yes,No,Diarrhea,20,31,No,No,Yes,Dry,5/19/18,5/2/19,3/19/11,7.17,Responder
+47W61S,recipient,before,Tux,Male,Domestic Shorthair,Domestic,Yes,NA,10,Fabiola,Fabiola,4EXDUK,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,No,Yes,Wet.Dry,5/22/17,9/8/21,NA,4,Responder
+50G79I,recipient,after,Tux,Male,Domestic Shorthair,Domestic,Yes,NA,10,Fabiola,Fabiola,4EXDUK,Slight Improvement,Yes,Yes,No,Yes,No,Diarrhea,NA,NA,Yes,No,Yes,Wet.Dry,5/22/17,11/1/19,NA,4,Responder
+3K54LA,recipient,after,Zach,Male,Norwegian Forest Cat,Norwegian.Siberian,No,12,4,Tabitha,Tabitha1,37H62V,Slight Improvement,No,Yes,No,Yes,No,Diarrhea,45,31,Yes,No,No,Wet,8/21/17,5/23/19,2/2/15,2.5,Responder
+EHPREC,recipient,before,Zach,Male,Norwegian Forest Cat,Norwegian.Siberian,No,12,4,Tabitha,Tabitha1,37H62V,Slight Improvement,No,Yes,No,Yes,No,Diarrhea,45,31,Yes,No,No,Wet,8/7/17,7/12/19,2/2/15,2.5,Responder
