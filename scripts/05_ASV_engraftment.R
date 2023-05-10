@@ -7,7 +7,7 @@
 #
 #                     Code Created By: Connie A.Rojas
 #                     Created On: 20 October 2022
-#                     Last updated: 6 December 2022
+#                     Last updated: 8 May 2023
 #
 ################################################################################
 
@@ -32,8 +32,6 @@ adf$Row.names=NULL; adf$Species=NULL; adf$asv_species=NULL;
 jac=(adf>0)*1;
 
 # subset data frame to keep samples from stool donors and FMT recipients
-meta$name[meta$sampleID=="2HH288"]="Tabbytha2";
-meta$name[meta$sampleID=="NHHXZN"]="Tabbytha2";
 meta=meta[meta$group!="healthy",];
 meta$donor=as.character(meta$donor);
 
@@ -95,11 +93,10 @@ for(i in 1:length(mycats))
 
 erate=read.csv("data/05_engraftment_rate.csv",header=T);
 edf=merge(erate,meta[meta$type=="before",],by="name");
-edf=edf[complete.cases(edf$antibiotics),];
 
 # engrafment rate ~ host predictors
-mod1=lmer(edf$engraf.rate~edf$IBD+edf$symptom+edf$antibiotics+
-            edf$response2+edf$diet_combo+
+mod1=lmer(edf$engraf.rate~edf$response2+ edf$antibiotics+
+            edf$symptom+edf$dry_food+
             (1|round(edf$age_yrs))+
             (1|edf$sex),
           na.action="na.exclude");
@@ -114,14 +111,15 @@ kruskal.test(edf$engraf.rate~edf$donor);
 ################################################################################
 
 # bar plot of ASV engrafment rates for the 68 FMT recipients
+erate=erate[erate$name %in% edf$name,];
 ep1=ggplot(erate,aes(reorder(name,engraf.rate), y=engraf.rate))+
   geom_bar(position="dodge",stat="identity",size=1.2, color="#525252",fill="#bdbdbd")+ 
-  coord_cartesian(ylim=c(0,50))+
+  coord_cartesian(ylim=c(0,40))+
   labs(y="ASV Engraftment Rate (%)",
        x="FMT Recipients")+
   theme_classic() + 
-  theme(axis.title = element_text(size = 13, face="bold"), 
-        axis.text = element_text(size = 14),
+  theme(axis.title = element_text(size = 14, face="bold"), 
+        axis.text = element_text(size = 16),
         axis.ticks.x=element_blank(),
         axis.text.x=element_blank(),
         legend.position="none"); plot(ep1);
@@ -132,13 +130,14 @@ mycol=c("#02818a",'#7570b3',"#CAB2D6",
 ep2=ggplot(data=edf, 
           mapping=aes(x=donor,y=engraf.rate,fill=donor))+
   geom_boxplot(lwd=0.7)+
+  coord_cartesian(ylim=c(0,30))+
   scale_x_discrete(labels=c("D1*","D2","D3","D4*","D5","D6","D7","D8"))+
   theme_classic()+ 
   scale_fill_manual(values=mycol)+
   labs(x = "Donor ID",
        y = "ASV Engraftment Rate in Recipients")+
-  theme(axis.title = element_text(size = 13, face="bold"), 
-        axis.text = element_text(size = 14),
+  theme(axis.title = element_text(size = 14, face="bold"), 
+        axis.text = element_text(size = 16),
         legend.position="none"); plot(ep2);
 aggregate(edf$engraf.rate, list(edf$donor), FUN=mean);
 
@@ -158,23 +157,23 @@ genus$abun=(genus$Freq/sum(genus$Freq))*100;
 
 # plot
 genus$dummy="cats";
-genus=genus[genus$Freq>20,];
+genus=genus[genus$Freq>15,];
 
 b1=ggplot(genus, aes(y=abun, fill=dummy,reorder(taxo,abun)))+
   geom_bar(position="dodge",stat="identity",
            color="black")+
   coord_flip() +
-  labs(y="Total % of Engrafted ASVs",
+  labs(y="Percentage of Engrafted ASVs",
        x="",
        fill="")+  
   scale_fill_manual(values="#fa9fb5")+  
   theme_bw()+
   theme(legend.position="none",
         legend.text=element_text(size=13),
-        legend.title=element_text(size=13, face="bold"),
-        axis.text.x=element_text(size=13,face="bold"),
+        legend.title=element_text(size=14, face="bold"),
+        axis.text.x=element_text(size=14,face="bold"),
         axis.title.x=element_text(size=13, face="bold"), 
-        axis.text.y=element_text(size=11,face="bold"),
+        axis.text.y=element_text(size=14,face="bold"),
         axis.title.y=element_text(size=13, face="bold"));plot(b1);
 
 ## save plots

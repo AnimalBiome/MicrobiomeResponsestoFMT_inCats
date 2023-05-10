@@ -2,12 +2,12 @@
 #
 #               Fecal microbiome responses to FMT in Cats
 #                      
-#       Rojas et al 2022. Microbiome responses to fecal microbiota 
+#       Rojas et al 2023. Microbiome responses to fecal microbiota 
 #             transplantation in cats with chronic digestive issues.
 #
 #                     Code Created By: Connie A.Rojas
 #                     Created On: 20 Jan 2022
-#                     Last updated: 4 November 2022
+#                     Last updated: 8 May 2023
 #
 ################################################################################
 
@@ -34,14 +34,12 @@ pato=read.csv("data/00_pathogenic_taxa.csv",header=T);
 # attach taxonomy to the ASV table 
 tax$Genus[(tax$Genus=="Ruminococcus_2")|
             (tax$Genus=="Ruminococcus_1")]="Ruminococcus"
+#asv_tax=merge(asv,tax,by="row.names"); for new cats 48
 asv_tax=merge(asvdf,tax,by="row.names"); 
 colnames(asv_tax)[1]="ASV";
 
 # make a vector of FMT sample IDs
-meta2=meta[meta$group=="recipient",];
-meta2$name[meta2$sampleID=="2HH288"]="Tabbytha2";
-meta2$name[meta2$sampleID=="NHHXZN"]="Tabbytha2";
-
+meta2=meta[meta$group=="recipient",]; 
 samples=meta2$sampleID;
 rownames(meta2)=meta2$sampleID; meta2$sampleID=NULL;
 
@@ -67,7 +65,8 @@ abun2=abun[,colnames(abun) %in% core$Genus];
 
 # confirm that all core taxa have a prevalence > 10%
 jac=(abun2>0)*1;jac=data.frame(t(jac));
-jac=jac[rowSums(jac)>13,];
+jac=jac[rowSums(jac)>5,]; 
+#jac=jac[rowSums(jac)>13,];
 nrow(jac)==ncol(abun2);
 
 # append sample metadata
@@ -111,7 +110,7 @@ abun=abun[,colnames(abun) %in% pato$Genus];
 
 # only retain taxa with prevalence > 10%
 jac=(abun>0)*1;jac=data.frame(t(jac));
-jac=jac[rowSums(jac)>13,];
+jac=jac[rowSums(jac)>5,]; 
 abun3=abun[,colnames(abun)%in%rownames(jac)];
 
 # add sample metadata
@@ -119,7 +118,7 @@ abunmeta=merge(abun3, meta2, by="row.names");
 colnames(abunmeta)[1]="sampleID";
 
 # wrangle df so columns are  CatName | Taxa | Before | After 
-abunmeta2=abunmeta[,c(2:6,8,9)];  
+abunmeta2=abunmeta[,c(2:7,9,10)]; 
 abunmeta2=melt(abunmeta2, id=c("name","type"));
 befores=abunmeta2[abunmeta2$type=="before",];
 afters=abunmeta2[abunmeta2$type=="after",];
@@ -140,46 +139,56 @@ ab3= merge(ab, meta2[meta2$type=="after",], by="name");
 ################################################################################
 
 # use for loop to test each core bacterial genera [21 in total]
+
 for(i in 2:22)
 {
   print(paste("Linear mixed model for:", colnames(ab2)[i]));
   bmod=glm(ab2[,i]~
-              ab2$response2+
-              ab2$symptom+
-              ab2$IBD+
-              ab2$antibiotics+
-              ab2$diet_combo,
+             factor(ab2$response2)+
+             factor(ab2$antibiotics)+
+             factor(ab2$symptom)+
+             factor(ab2$dry_food),
             data=ab2, na.action=na.omit);
   #print(summary(bmod));
   print("Are host predictors statistically significant?");
   print(Anova(bmod));
 };
 
-# use for loop to test each pathogenic bacteria genera [5 in total]
-for(i in 2:6)
+# quick break for means
+aggregate(ab2$Blautia, list(ab2$symptom), FUN=mean);
+aggregate(ab2$Parabacteroides, list(ab2$response2), FUN=mean);
+aggregate(ab2$Peptococcus, list(ab2$symptom), FUN=mean);
+aggregate(ab2$Ruminococcus, list(ab2$response2), FUN=mean);
+
+# use for loop to test each pathogenic bacteria genera [6 for 48 cats]
+
+for(i in 2:7)
 {
   print(paste("Linear mixed model for:", colnames(ab3)[i]));
   bmod=glm(ab3[,i]~
-              ab3$response2+
-              ab3$symptom+
-              ab3$IBD+
-              ab3$antibiotics+
-              ab3$diet_combo,
+             ab3$response2+
+             ab3$antibiotics+
+             ab3$symptom+
+             ab3$dry_food,
             data=ab3, na.action=na.omit);
   #print(summary(bmod));
   print("Are host predictors statistically significant?");
   print(Anova(bmod));
 };
 
+# quick break for means
+aggregate(ab3$Desulfovibrio, list(ab3$symptom), FUN=mean);
+aggregate(ab3$`Escherichia-Shigella`, list(ab3$antibiotics), FUN=mean);
+aggregate(ab3$Desulfovibrio, list(ab3$response2), FUN=mean);
+
 # for posthoc testing
-tmod=glm(ab3$Veillonella~
-           response2+
-           symptom+
-           IBD+
-           antibiotics+
-           diet_combo,
-         data=ab3, na.action=na.omit);
-summary(glht(tmod, mcp(diet_combo="Tukey")));  # specify host predictor here, after 'mcp'
+ab3$symptom=factor(ab3$symptom);
+ab3$response2=factor(ab3$response2);
+ab3$antibiotics=factor(ab3$antibiotics);
+ab3$dry_food=factor(ab3$dry_food);
+mod1=glm(ab3$`Escherichia-Shigella`~response2+antibiotics+symptom+dry_food,
+         data=ab3);
+summary(glht(mod1, linfct = mcp(antibiotics = "Tukey")));
 
 
 ################################################################################
@@ -187,28 +196,31 @@ summary(glht(tmod, mcp(diet_combo="Tukey")));  # specify host predictor here, af
 #              yielded significant p-values according to the models above
 ################################################################################
 
-# Plot four genera color-coded by clinical signs
-CG=abun2[,colnames(abun2) %in% c("Blautia","Collinsella", "Negativibacillus")];
-patho=data.frame(abun3[,1:2]);patho$Escherichia.Shigella=NULL; 
+# Plot five genera color-coded by clinical signs
+CG=abun2[,colnames(abun2) %in% c("Clostridium ss1","Collinsella", "Negativibacillus",
+                                 "Subdoligranulum")];
+patho=data.frame(abun3[,1:2]);patho$Clostridioides=NULL; 
 
 CG=merge(CG, patho,by="row.names");  colnames(CG)[1]="sampleID"
 CG<-reshape2::melt(CG, id.vars="sampleID",value.name = "abun");
 CG=merge(CG,meta,by="sampleID");
 CG$type=factor(CG$type, levels=c("before","after"));
+CG$symptom=factor(CG$symptom,levels=c("Diarrhea","VomDiarr","VomConstip","Constipation"))
 
 mycol=c("#1f78b4","#ffd92f","palegreen","#f781bf"); 
 
 p1=ggplot(data=CG, 
           mapping=aes(x=type,y=abun))+
-  facet_wrap(~variable, scales="free_y",nrow=1)+
+  facet_wrap(~variable, scales="free_y",ncol=3)+
   geom_line(aes(group = name,
                 color=symptom))+
   scale_color_manual(values=mycol)+
   scale_x_discrete(labels=c("before" = "preFMT", 
-                            "after" = "postFMT"))+
+                            "after" = "postFMT"),
+                   expand = c(0.07, 0.07))+
   theme_bw()+ 
   labs(x = "",
-       y="Relative Abundance (%)",
+       y="Relative Abun. (%)",
        color="Clinical Signs")+
   theme(legend.title=element_text(size=11,face="bold"),
         text = element_text(size=12),
@@ -216,6 +228,8 @@ p1=ggplot(data=CG,
         legend.key.size = unit(2,"line"),
         legend.text = element_text(size=12),
         legend.margin=margin(t=-10),
+        legend.box.spacing = unit(0, "pt"),
+        plot.margin = unit(c(0.1,0.5,0.1,0.5), "cm"),
         axis.text.y=element_text(size=11),
         axis.text.x=element_text(size=11),
         axis.title.x=element_text(size=12, face="bold"),
@@ -223,34 +237,39 @@ p1=ggplot(data=CG,
         strip.text = element_text(size =11, face="bold"))+
   guides(color = guide_legend(override.aes = list(size = 3))); plot(p1);
 
-# Plot three genera color-coded by IBD
-CG=abun2[,colnames(abun2) %in% c("sampleID","Parabacteroides","Peptoclostridium")];
-patho=data.frame(abun3[,2:3]);patho$Escherichia.Shigella=NULL; 
+# Plot five genera color-coded by to Treatment
+CG=abun2[,colnames(abun2) %in% c("sampleID","Butyricicoccus","Megamonas","Peptococcus",
+                                 "Ruminococcus")];
+patho=data.frame(abun3[,5:6]);patho$Sarcina=NULL; 
 
 CG=merge(CG, patho,by="row.names");  colnames(CG)[1]="sampleID"
 CG<-reshape2::melt(CG, id.vars="sampleID",value.name = "abun");
 CG=merge(CG,meta,by="sampleID");
 CG$type=factor(CG$type, levels=c("before","after"));
+CG$response2=factor(CG$response2, levels=c("Responder","Non-Responder"));
 
-mycol=c("#fa9fb5","#000000","#bdbdbd")
+mycol=c("#88419d","#FDBF6F");
 p2=ggplot(data=CG, 
           mapping=aes(x=type,y=abun))+
-  facet_wrap(~variable, scales="free_y",nrow=1)+
+  facet_wrap(~variable, scales="free_y",ncol=3)+
   geom_line(aes(group = name,
-                color=IBD))+
+                color=response2))+
   scale_color_manual(values=mycol)+
   scale_x_discrete(labels=c("before" = "preFMT", 
-                            "after" = "postFMT"))+
+                            "after" = "postFMT"),
+                   expand = c(0.07, 0.07))+
   theme_bw()+ 
   labs(x = "",
-       y="Relative Abundance (%)",
-       color="IBD")+
+       y="Relative Abun. (%)",
+       color="Response to Tmt")+
   theme(legend.title=element_text(size=11,face="bold"),
         text = element_text(size=12),
         legend.position="top",
         legend.key.size = unit(2,"line"),
         legend.text = element_text(size=12),
-        legend.margin=margin(t=-10),
+        legend.margin=margin(t=-14),
+        legend.box.spacing = unit(0, "pt"),
+        plot.margin = unit(c(0.1,0.5,0.1,0.5), "cm"),
         axis.text.y=element_text(size=11),
         axis.text.x=element_text(size=11),
         axis.title.x=element_text(size=12, face="bold"),
@@ -259,33 +278,39 @@ p2=ggplot(data=CG,
   guides(color = guide_legend(override.aes = list(size = 3))); plot(p2);
 
 
-# Plot two genera color-coded by Response to Treatment
-CG=abun2[,colnames(abun2) %in% c("sampleID","Peptococcus","Ruminococcus")];
-CG$sampleID=rownames(CG);
+# Plot three genera color-coded by Abx
+CG=abun2[,colnames(abun2) %in% c("sampleID","Negativibacillus","Megamonas")];
+CG$Megamonas=NULL;
+patho=data.frame(abun3[,2:3]);
+
+CG=merge(CG, patho,by="row.names");  colnames(CG)[1]="sampleID"
 CG<-reshape2::melt(CG, id.vars="sampleID",value.name = "abun");
 CG=merge(CG,meta,by="sampleID");
-CG$type=factor(CG$type, levels=c("before","after"))
+CG$type=factor(CG$type, levels=c("before","after"));
+CG$antibiotics=factor(CG$antibiotics, levels=c("Yes","No"));
 
-mycol=c("#88419d","#FDBF6F");
-
+mycol=c("#41b6c4","#f768a1");
 p3=ggplot(data=CG, 
           mapping=aes(x=type,y=abun))+
   facet_wrap(~variable, scales="free_y",nrow=1)+
   geom_line(aes(group = name,
-                color=response2))+
+                color=antibiotics))+
   scale_color_manual(values=mycol)+
   scale_x_discrete(labels=c("before" = "preFMT", 
-                            "after" = "postFMT"))+
+                            "after" = "postFMT"),
+                   expand = c(0.07, 0.07))+
   theme_bw()+ 
   labs(x = "",
-       y="Relative Abundance (%)",
-       color="Response to Tmt")+
+       y="Relative Abun. (%)",
+       color="Prior Abx Use")+
   theme(legend.title=element_text(size=11,face="bold"),
         text = element_text(size=12),
         legend.position="top",
         legend.key.size = unit(2,"line"),
         legend.text = element_text(size=12),
-        legend.margin=margin(t=-10),
+        legend.margin=margin(t=-14),
+        legend.box.spacing = unit(0, "pt"),
+        plot.margin = unit(c(0.1,0.5,0.1,0.5), "cm"),
         axis.text.y=element_text(size=11),
         axis.text.x=element_text(size=11),
         axis.title.x=element_text(size=12, face="bold"),
@@ -294,17 +319,58 @@ p3=ggplot(data=CG,
   guides(color = guide_legend(override.aes = list(size = 3))); plot(p3);
 
 
+# Plot three genera color-coded by Dry Kibble consumption
+CG=abun2[,colnames(abun2) %in% c("sampleID","Peptoclostridium","Subdoligranulum")];
+CG$sampleID=rownames(CG);
+CG<-reshape2::melt(CG, id.vars="sampleID",value.name = "abun");
+CG=merge(CG,meta,by="sampleID");
+CG$type=factor(CG$type, levels=c("before","after"));
+CG$dry_food=factor(CG$dry_food, levels=c("Yes","No"));
+
+mycol=c("#1b9e77", "#d95f02");
+p4=ggplot(data=CG, 
+          mapping=aes(x=type,y=abun))+
+  facet_wrap(~variable, scales="free_y",nrow=1)+
+  geom_line(aes(group = name,
+                color=dry_food))+
+  scale_color_manual(values=mycol)+
+  scale_x_discrete(labels=c("before" = "preFMT", 
+                            "after" = "postFMT"),
+                   expand = c(0.07, 0.07))+
+  theme_bw()+ 
+  labs(x = "",
+       y="Relative Abun. (%)",
+       color="Dry Kibble")+
+  theme(legend.title=element_text(size=11,face="bold"),
+        text = element_text(size=12),
+        legend.position="top",
+        legend.key.size = unit(2,"line"),
+        legend.text = element_text(size=12),
+        legend.margin=margin(t=-14),
+        legend.box.spacing = unit(0, "pt"),
+        plot.margin = unit(c(0.1,0.5,0.1,0.5), "cm"),
+        axis.text.y=element_text(size=11),
+        axis.text.x=element_text(size=11),
+        axis.title.x=element_text(size=12, face="bold"),
+        axis.title.y=element_text(size=12, face="bold"),
+        strip.text = element_text(size =11, face="bold"))+
+  guides(color = guide_legend(override.aes = list(size = 3))); plot(p4);
+
+
 ################################################################################
 #             6. save plots!
 ################################################################################
-mypts=arrangeGrob(p1,p2,p3, nrow=3,
-                   layout_matrix=rbind(c(1,1,1,1),c(2,2,2,2),
-                                       c(3,3,3,NA))); 
+
+mypts=arrangeGrob(p1,p2,p3,p4, nrow=4,
+                  heights = c(1/3, 1/3, 1/4.6, 1/4.6),
+                  layout_matrix=rbind(c(1,1,1,1),c(2,2,2,2),
+                                      c(3,3,3,3),c(4,4,4,NA)));
+
 ggsave(filename="04_RelAbunTaxa_Plots.pdf",
        device="pdf",path="./figures",
        plot=mypts,
-       width=8.5,
-       height=10,
+       width=7,
+       height=12,
        units="in",
        dpi=500);
 

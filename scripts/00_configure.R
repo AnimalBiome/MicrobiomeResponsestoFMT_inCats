@@ -2,7 +2,7 @@
 #
 #               Fecal microbiome responses to FMT in Cats
 #                      
-#       Rojas et al 2022. Microbiome responses to fecal microbiota 
+#       Rojas et al 2023. Microbiome responses to fecal microbiota 
 #             transplantation in cats with chronic digestive issues.
 #
 #                     Code Created By: Connie A.Rojas
@@ -27,12 +27,11 @@ options(stringsAsFactors = FALSE) ;
 
 # load necessary packages
 library(pacman);
-pacman::p_load("car","MASS","dplyr","tidyr","reshape2","vegan","ggplot2",
-               "picante","indicspecies","lme4","lmtest","multcomp","grid",
-               "phyloseq","Biostrings","QsRutils","phangorn","ape","pheatmap",
-               "stringr","dada2","DECIPHER","gridExtra","decontam", "sjPlot",
-               "lubridate","purrr","stringi","MuMIn","chron","philentropy",
-               "microbiome","cowplot","Maaslin2");
+pacman::p_load("car","MASS","dplyr","tidyr","vegan","ggplot2",
+               "picante","lme4","lmtest","multcomp",
+               "phyloseq","phangorn","ape","stringr","dada2",
+               "gridExtra","decontam","purrr","stringi",
+               "compositions");
 
 
 ################################################################################

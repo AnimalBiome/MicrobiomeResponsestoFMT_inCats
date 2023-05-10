@@ -2,18 +2,19 @@
 #
 #               Fecal microbiome responses to FMT in Cats
 #                      
-#       Rojas et al 2022. Microbiome responses to fecal microbiota 
+#       Rojas et al 2023. Microbiome responses to fecal microbiota 
 #             transplantation in cats with chronic digestive issues.
 #
 #                     Code Created By: Connie A.Rojas
 #                     Created On: 02 Oct 2021
-#                     Last updated: 4 November 2022
+#                     Last updated: 28 April 2023
 #
 ################################################################################
 
 ## CODE FOR: 
 #       A) testing microbiome beta-diversity ~ host predictors (PERMANOVA)
 #       B) testing microbiome dispersion ~ host predictors (PERMDISP)
+#       C) PCoA ordinations of microbiome variation ~ host predictors
 
 
 source(file="scripts/00_configure.R"); #set up environment
@@ -29,7 +30,6 @@ load("data/02_ASV_phylotree.Rdata");
 
 # retain samples from FMT recipients 
 meta2=meta[meta$group=="recipient",];
-meta2=meta2[complete.cases(meta2$antibiotics),];
 before=meta2[meta2$type=="before",];
 after=meta2[meta2$type=="after",];
 
@@ -39,7 +39,7 @@ asv=asvdf[,colnames(asvdf) %in% after$sampleID];
 asv=asvdf[,colnames(asvdf) %in% meta2$sampleID]; 
 
 # remove singleton/doubleton ASVs
-asv=asv[rowSums(asvdf)>2,];
+asv=asv[rowSums(asv)>2,];
 asv=asv[,order(colnames(asv))];
 
 
@@ -50,7 +50,6 @@ asv=asv[,order(colnames(asv))];
 
 # get distances
 bray<-apply(asv, 2, function(i) (i/sum(i))*100);
-
 ps1<- phyloseq(otu_table(bray, taxa_are_rows=TRUE));
 bray.dist=phyloseq::distance(ps1, method="bray");
 
@@ -60,42 +59,40 @@ set.seed(711);
 phy_tree(ps2) <- root(phy_tree(ps2), sample(taxa_names(ps2), 1), resolve.root = TRUE); 
 wun.dist=phyloseq::distance(ps2, method="wunifrac");
 
+clra=data.frame(clr(asv));
+ps3<- phyloseq(otu_table(clra, taxa_are_rows=TRUE));
+clr.dist=phyloseq::distance(ps3, method="euclidean");
+
 # microbiome beta-diversity ~ host predictors
-mydist=list(bray.dist,wun.dist);
-names=c("Bray-Curtis","WUNIFRAC");
-met=c("bray","euclidian"); 
+mydist=list(bray.dist,wun.dist,clr.dist);
+names=c("Bray-Curtis","WUNIFRAC","Aitchison");
+met=c("bray","euclidian","euclidean"); 
 
-for(i in 1:2)
+for(i in 1:3)
 {
-  print(paste("PERMANOVA ~ host predictors, N=67",names[i]));
-  print(adonis2(mydist[[i]]~     
-                  IBD+
-                  symptom+
-                  antibiotics+
-                  response2+
-                  diet_combo+
-                  age_yrs+
-                  sex,
-                data=after,   # before or after 
-                method = met[i],
-                by="terms",
-                permutations = 999));
-};
-
-# preFMT vs. postFMT
-meta2$name[(meta2$sampleID=="2HH288")|
-             (meta2$sampleID=="NHHXZN")]="Tabbytha2";
-for(i in 1:2)
-{
-  print(paste("PERMANOVA preFMT vs postFMT, N=67, using:", names[i]));
+  print(paste("PERMANOVA ~ host predictors, N=46",names[i]));
   print(adonis2(mydist[[i]]~
-                  type+
-                  name,
-                data=meta2,
+                  response2+
+                  antibiotics+  
+                  symptom+
+                  dry_food+
+                  round(age_yrs)+
+                  sex,
+                data=after,   #before or after
                 method = met[i],
-                by="terms",
+                by="margin",
                 permutations = 999));
 };
+# library("pairwiseAdonis");
+for(i in 1:3)
+{
+  print(pairwise.adonis(mydist[[i]],
+                        as.factor(after$symptom), #before or after
+                        sim.method = met[i],
+                        p.adjust.m = "fdr"));
+};
+
+
 
 
 ################################################################################
@@ -103,7 +100,7 @@ for(i in 1:2)
 ################################################################################
 
 # clinical signs
-for(i in 1:2)
+for(i in 1:3)
 {
   print(paste("PERMDISP test, N=67",names[i]));
   bdisper<-with(after,    # before or after
@@ -112,25 +109,16 @@ for(i in 1:2)
   #print(TukeyHSD(bdisper));
 };
 
-# symtoms
-for(i in 1:2)
+# dry kibble consumption
+for(i in 1:3)
 {
   print(paste("PERMDISP test, N=67",names[i]));
   bdisper<-with(after,    # before or after
-                betadisper(mydist[[i]],diet_combo));
+                betadisper(mydist[[i]],dry_food));
   print(anova(bdisper));
   #print(TukeyHSD(bdisper));
 };
 
-# IBD
-for(i in 1:2)
-{
-  print(paste("PERMDISP test, N=67",names[i]));
-  bdisper<-with(after,   # before or after
-                betadisper(mydist[[i]],IBD));
-  print(anova(bdisper));
-  #print(TukeyHSD(bdisper));
-};
 
 
 ################################################################################
@@ -138,7 +126,7 @@ for(i in 1:2)
 ################################################################################
 
 # calculate coordinates for PCoA
-pcoa_dec=cmdscale(bray.dist, eig=TRUE);  
+pcoa_dec=cmdscale(clr.dist, eig=TRUE);  
 pcoa=as.data.frame(pcoa_dec$points);
 colnames(pcoa)=c("Axis1","Axis2");
 pcoa=tibble::rownames_to_column(as.data.frame(pcoa), "sampleID");
@@ -149,41 +137,20 @@ pcoa_per=(pcoa_dec$eig/sum(pcoa_dec$eig))*100;
 ax1=format(pcoa_per[1], digits=2, nsmall=2);
 ax2=format(pcoa_per[2], digits=2, nsmall=2);
 
+# set order offactors
+pcoa_met$symptom=factor(pcoa_met$symptom, levels=c("Diarrhea","VomDiarr",
+                                               "VomConstip","Constipation"));
+pcoa_met$dry_food=factor(pcoa_met$dry_food,levels=c("Yes","No"));
 
 ################################################################################
 #             5. plot PCoAs!
 ################################################################################
 
-# PCoA color-coded by IBD
-mycol=c("#fa9fb5","#000000","lightgoldenrod") #for IBD
-pcoa1=ggplot(pcoa_met, aes(Axis1, Axis2))+
-geom_point(mapping=aes(fill=IBD),  
-           size = 2.5,
-           pch=21)+
-  labs(y=paste("PC2 (",ax2,"%)",sep=""),
-       x=paste("PC1 (",ax1,"%)",sep=""),
-       fill="",
-       title="PostFMT - IBD")+   
-  scale_fill_manual(values=mycol)+  
-  stat_ellipse(geom = "polygon", alpha =0.12, aes(fill = IBD))+ 
-  theme_bw()+
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.background = element_rect(colour = "black", size=2),
-        legend.position="right",
-        legend.text=element_text(size=13),
-        legend.title=element_text(size=13, face="bold"),
-        plot.title=element_text(size=14, face="bold"),
-        axis.text.x=element_text(size=13),
-        axis.title.x=element_text(size=13, face="bold"), 
-        axis.text.y=element_text(size=13),
-        axis.title.y=element_text(size=13, face="bold"));plot(pcoa1);
-
-# PCoA color-coded by clinical symptoms
+# PCoA color-coded by clinical signs
 mycol=c("#1f78b4","#ffd92f","palegreen","#f781bf"); 
-pcoa2=ggplot(pcoa_met, aes(Axis1, Axis2))+
+pcoa1=ggplot(pcoa_met, aes(Axis1, Axis2))+
   geom_point(mapping=aes(fill=symptom),  
-             size = 2.5,
+             size = 2.7,
              pch=21)+
   labs(y=paste("PC2 (",ax2,"%)",sep=""),
        x=paste("PC1 (",ax1,"%)",sep=""),
@@ -202,20 +169,20 @@ pcoa2=ggplot(pcoa_met, aes(Axis1, Axis2))+
         axis.text.x=element_text(size=13),
         axis.title.x=element_text(size=13, face="bold"), 
         axis.text.y=element_text(size=13),
-        axis.title.y=element_text(size=13, face="bold"));plot(pcoa2);
+        axis.title.y=element_text(size=13, face="bold"));plot(pcoa1);
 
 # PCoA color-coded by diet category
 mycol=c("#1b9e77", "#d95f02", "darkorchid2","steelblue1","#e6ab02","#b3e2cd");
-pcoa3=ggplot(pcoa_met, aes(Axis1, Axis2))+
-  geom_point(mapping=aes(fill=diet_combo),  
-             size = 2.5,
+pcoa2=ggplot(pcoa_met, aes(Axis1, Axis2))+
+  geom_point(mapping=aes(fill=dry_food),  
+             size = 2.7,
              pch=21)+
   labs(y=paste("PC2 (",ax2,"%)",sep=""),
        x=paste("PC1 (",ax1,"%)",sep=""),
        fill="",
-       title="PostFMT - Diet")+   
+       title="PostFMT - Dry Kibble")+   
   scale_fill_manual(values=mycol)+  
-  stat_ellipse(geom = "polygon", alpha =0.12, aes(fill = diet_combo))+ 
+  stat_ellipse(geom = "polygon", alpha =0.12, aes(fill = dry_food))+ 
   theme_bw()+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
@@ -227,45 +194,19 @@ pcoa3=ggplot(pcoa_met, aes(Axis1, Axis2))+
         axis.text.x=element_text(size=13),
         axis.title.x=element_text(size=13, face="bold"), 
         axis.text.y=element_text(size=13),
-        axis.title.y=element_text(size=13, face="bold"));plot(pcoa3);
-
-# barplot showing % variance explained by each host predictor
-cats=c("Diet","ClinicalSigns","IBD","Antibiotics","ResptoTmt","Age","Sex");
-cats=c(cats,cats); stype=c(rep("PreFMT",7), rep("PostFMT",7));
-vals1=c(11,10,0.1,0.1,0.1,0.1,0.1,11,12,5,0.1,0.1,0.1,0.1);
-mdf=data.frame(cats, vals1,stype);
-
-mdf$cats=factor(mdf$cats, levels=c("Diet","ClinicalSigns","IBD",
-                                   "Antibiotics","ResptoTmt","Age","Sex"));
-mdf$stype=factor(mdf$stype, levels=c("PreFMT","PostFMT"));
-
-barcol=c("#bebada", "#7fcdbb");
-b1=ggplot(mdf, aes(fill=stype, y=vals1, x=cats))+
-  geom_bar(position="dodge",stat="identity",
-           color="black")+
-  labs(y="% Variance Explained",
-       x="",
-       fill="")+  
-  scale_fill_manual(values=barcol)+ 
-  theme_bw()+
-  theme(legend.position="right",
-        legend.text=element_text(size=13),
-        legend.title=element_text(size=13, face="bold"),
-        axis.text.x=element_text(size=13, angle=45, vjust = 0.5),
-        axis.title.x=element_text(size=13, face="bold"), 
-        axis.text.y=element_text(size=13),
-        axis.title.y=element_text(size=13, face="bold"));plot(b1);
+        axis.title.y=element_text(size=13, face="bold"));plot(pcoa2);
 
 
 ################################################################################
 #             6. save plots
 ################################################################################
 
-mps=arrangeGrob(b1,pcoa1,pcoa2,pcoa3,nrow=2);
-ggsave(filename="03_PCoAs_hostpredictors.pdf",
+mps=arrangeGrob(pcoa1,pcoa2,nrow=1);
+ggsave(filename="03_PCoAs_hostpredictors_aitchison.pdf",
        device="pdf",path="./figures",
        plot=mps,
-       width=12.5,
-       height=9,
+       width=11,
+       height=4,
        units="in",
        dpi=500);
+

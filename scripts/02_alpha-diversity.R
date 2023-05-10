@@ -2,12 +2,12 @@
 #
 #               Fecal microbiome responses to FMT in Cats
 #                      
-#       Rojas et al 2022. Microbiome responses to fecal microbiota 
+#       Rojas et al 2023. Microbiome responses to fecal microbiota 
 #             transplantation in cats with chronic digestive issues.
 #
 #                     Code Created By: Connie A.Rojas
 #                     Created On: 22 Sept 2021
-#                     Last updated: 4 November 2022
+#                     Last updated: 28 April 2023
 #
 ################################################################################
 
@@ -97,7 +97,6 @@ colnames(alpha)[1]="sampleID";
 am=inner_join(alpha, meta, by="sampleID");
 
 # LMM microbiome alpha-div ~ host predictors
-am=am[complete.cases(am$antibiotics),];
 bdf=am[am$type=="before",];
 adf=am[am$type=="after",];
 
@@ -107,11 +106,10 @@ for(i in 1:3)
 {
   print(paste("LMM preFMT ~ host predictors for:", mymetrics[i]));
   bmod=lmer(bdf[,mymetrics[i]]~
-              bdf$IBD+
-              bdf$symptom+
-              bdf$antibiotics+
               bdf$response2+
-              bdf$diet_combo+
+              bdf$antibiotics+
+              bdf$symptom+
+              bdf$dry_food+
               (1|round(bdf$age_yrs))+
               (1|bdf$sex),
             na.action="na.exclude");
@@ -122,67 +120,68 @@ for(i in 1:3)
 {
   print(paste("LMM postFMT ~ host predictors for:", mymetrics[i]));
   amod=lmer(adf[,mymetrics[i]]~
-              adf$IBD+
-              adf$symptom+
-              adf$antibiotics+
               adf$response2+
-              adf$diet_combo+
-              (1|adf$age_yrs)+
+              adf$antibiotics+
+              adf$symptom+
+              adf$dry_food+
+              (1|round(adf$age_yrs))+
               (1|adf$sex),
             na.action="na.exclude");
   print(Anova(amod));
 };
 
-# LMM microbiome alpha-div ~ sample type (preFMT vs post FMT)
-for(i in 1:3)
-{
-  print(paste("LMM preFMT vs. postFMT for:", mymetrics[i]));
-  rmod=lmer(am[,mymetrics[i]]~
-              am$type+
-              (1|am$name),
-            na.action=na.omit);
-  print(Anova(rmod));
-};
-
+# post-hoc comparisons
+mod1=lmer(pielou~response2+antibiotics+symptom+dry_food+
+            (1|round(bdf$age_yrs)), data=bdf);
+summary(glht(mod1, linfct = mcp(dry_food = "Tukey")))
 
 ################################################################################
 #             5. boxplots of microbiome alpha-diversity
 ################################################################################
 
-# preFMT Pielou's evenness ~ Dietary category
+# preFMT Pielou's evenness ~ Clinical signs
+bdf$symptom=factor(bdf$symptom, levels=c("Diarrhea","VomDiarr",
+                                         "VomConstip","Constipation"));
 box1=ggplot(data=bdf, 
-          mapping=aes(x=diet_combo,y=pielou))+
-  geom_boxplot(lwd=0.7)+
-  theme_bw()+ 
-  labs(x = "Diet Category",
-       y = "Pielou's Evenness",  
-       title="Pre-FMT")+
-  theme(axis.title = element_text(size = 12, face="bold"), 
-        axis.text = element_text(size = 11),
-        legend.position="none"); plot(box1);
-
-# postFMT Pielou's evenness ~ Clinical signs
-box2=ggplot(data=adf, 
           mapping=aes(x=symptom,y=pielou))+
   geom_boxplot(lwd=0.7)+
   theme_bw()+ 
   labs(x = "Clinical signs",
        y = "Pielou's Evenness",  
-       title="Post-FMT")+
-  theme(axis.title = element_text(size = 12, face="bold"), 
-        axis.text = element_text(size = 11),
-        legend.position="none"); plot(box2);
+       title="Pre-FMT")+
+  theme(axis.title = element_text(size = 13, face="bold"),
+        plot.title=element_text(size = 13, face="bold"),
+        axis.text = element_text(size = 11.4),
+        legend.position="none",
+        panel.background = element_rect(colour = "black", 
+                                        size=2)); plot(box1);
+
+# preFMT Pielou's evenness ~ dry kibble consumption
+bdf$dry_food=factor(bdf$dry_food,levels=c("Yes","No"));
+box2=ggplot(data=bdf, 
+          mapping=aes(x=dry_food,y=pielou))+
+  geom_boxplot(lwd=0.7)+
+  theme_bw()+ 
+  labs(x = "Dry Kibble",
+       y = "Pielou's Evenness",  
+       title="Pre-FMT")+
+  theme(axis.title = element_text(size = 13, face="bold"), 
+        plot.title=element_text(size = 13, face="bold"),
+        axis.text = element_text(size = 13),
+        legend.position="none",
+        panel.background = element_rect(colour = "black", 
+                                        size=2)); plot(box2);
 
 # save plots
-ggsave(filename="02_alphadiv_diet.pdf",
+ggsave(filename="02_alphadiv_clinicalSigns.pdf",
        device="pdf",path="./figures",
-       plot=box2,
+       plot=box1,
        width=4.5, 
        height=4,
        units="in",
        dpi=500);
 
-ggsave(filename="02_alphadiv_clinicalSigns.pdf",
+ggsave(filename="02_alphadiv_diet.pdf",
        device="pdf",path="./figures",
        plot=box2,
        width=4.5, 
