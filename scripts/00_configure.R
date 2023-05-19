@@ -7,7 +7,7 @@
 #
 #                     Code Created By: Connie A.Rojas
 #                     Created On: 22 Sept 2021
-#                     Last updated: 4 December 2022
+#                     Last updated: 19 May 2023
 #
 ################################################################################
 
@@ -28,25 +28,22 @@ options(stringsAsFactors = FALSE) ;
 # load necessary packages
 library(pacman);
 pacman::p_load("car","MASS","dplyr","tidyr","vegan","ggplot2",
-               "picante","lme4","lmtest","multcomp",
+               "picante","lme4","lmtest","multcomp", "reshape2",
                "phyloseq","phangorn","ape","stringr","dada2",
-               "gridExtra","decontam","purrr","stringi",
-               "compositions");
+               "gridExtra","purrr","stringi",
+               "compositions","pairwiseAdonis");
 
 
 ################################################################################
 #             2. Communicate the R version and package versions to reader                 
 ################################################################################
 
-print("This code was developed with R version 3.6.2");
+print("This code was developed with R version 4.3.0");
 
-print("The packages used and their versions were: pheatmap_1.0.12 | 
-phangorn_2.5.5|QsRutils_0.1.4| Biostrings_2.54.0| phyloseq_1.30.0| 
-multcomp_1.4-15| lmtest_0.9-38| lme4_1.1-26| indicspecies_1.7.9| picante_1.8.2| 
-nlme_3.1-151| ape_5.4-1| ggplot2_3.3.3| vegan_2.5-7| permute_0.9-5| 
-reshape2_1.4.4| tidyr_1.1.2| dplyr_1.0.3| MASS_7.3-53| car_3.0-10| pacman_0.5.1| 
-stringr_1.4.0| DECIPHER_2.14.0| dada2_1.14.1|gridExtra_2.3| decontam_1.6.0 | 
-sjPlot_2.8.7| lubridate_1.7.9.2| purrr_0.3.4|stringi_1.5.3| MuMIn_1.43.17 | 
-chron_2.3-56 |philentropy_0.4.0 | microbiome_1.15.2 | cowplot_1.1.1 |
-      Maaslin2_1.7.3");
+print("The packages used and their versions were: car_3.1-2| MASS_7.3-60| 
+      dplyr_1.1.2| tidyr_1.3.0| vegan_2.6-4| ggplot2_3.4.2| picante_1.8.2|
+      lme4_1.1-33| lmtest_0.9-40 | multcomp_1.4-23| reshape2_1.4.4| 
+      phyloseq_1.44.0| phangorn_2.11.1| ape_5.7-1 | stringr_1.5.0| 
+      dada2_1.28.0| gridExtra_2.3| purrr_1.0.1| stringi_1.7.12| 
+      compositions_2.0-6 | pairwiseAdonis_0.4.1");
 

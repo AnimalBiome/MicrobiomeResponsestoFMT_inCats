@@ -36,7 +36,7 @@ after=meta2[meta2$type=="after",];
 # subset to before samples, after samples, or both [PICK ONE]
 asv=asvdf[,colnames(asvdf) %in% before$sampleID];  
 asv=asvdf[,colnames(asvdf) %in% after$sampleID]; 
-asv=asvdf[,colnames(asvdf) %in% meta2$sampleID]; 
+
 
 # remove singleton/doubleton ASVs
 asv=asv[rowSums(asv)>2,];

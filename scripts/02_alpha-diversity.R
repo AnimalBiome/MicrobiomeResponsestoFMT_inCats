@@ -154,7 +154,7 @@ box1=ggplot(data=bdf,
         axis.text = element_text(size = 11.4),
         legend.position="none",
         panel.background = element_rect(colour = "black", 
-                                        size=2)); plot(box1);
+                                        linewidth=2)); plot(box1);
 
 # preFMT Pielou's evenness ~ dry kibble consumption
 bdf$dry_food=factor(bdf$dry_food,levels=c("Yes","No"));
@@ -170,7 +170,7 @@ box2=ggplot(data=bdf,
         axis.text = element_text(size = 13),
         legend.position="none",
         panel.background = element_rect(colour = "black", 
-                                        size=2)); plot(box2);
+                                        linewidth=2)); plot(box2);
 
 # save plots
 ggsave(filename="02_alphadiv_clinicalSigns.pdf",

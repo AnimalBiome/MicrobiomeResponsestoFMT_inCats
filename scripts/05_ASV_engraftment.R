@@ -113,7 +113,7 @@ kruskal.test(edf$engraf.rate~edf$donor);
 # bar plot of ASV engrafment rates for the 68 FMT recipients
 erate=erate[erate$name %in% edf$name,];
 ep1=ggplot(erate,aes(reorder(name,engraf.rate), y=engraf.rate))+
-  geom_bar(position="dodge",stat="identity",size=1.2, color="#525252",fill="#bdbdbd")+ 
+  geom_bar(position="dodge",stat="identity",linewidth=1.2, color="#525252",fill="#bdbdbd")+ 
   coord_cartesian(ylim=c(0,40))+
   labs(y="ASV Engraftment Rate (%)",
        x="FMT Recipients")+
