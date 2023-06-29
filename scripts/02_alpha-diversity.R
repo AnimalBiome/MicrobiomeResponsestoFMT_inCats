@@ -135,6 +135,7 @@ mod1=lmer(pielou~response2+antibiotics+symptom+dry_food+
             (1|round(bdf$age_yrs)), data=bdf);
 summary(glht(mod1, linfct = mcp(dry_food = "Tukey")))
 
+
 ################################################################################
 #             5. boxplots of microbiome alpha-diversity
 ################################################################################

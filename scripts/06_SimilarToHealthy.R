@@ -25,7 +25,6 @@ source(file="scripts/00_configure.R"); #set up environment
 
 load("data/01_cats_meta.Rdata");
 load("data/01_ASV_table.Rdata");
-load("data/02_ASV_phylotree.Rdata");
 
 # retain samples from FMT recipients and healthy animals
 meta2=meta[meta$group!="donor",];
@@ -42,17 +41,13 @@ asv=asv[,order(colnames(asv))];
 
 # get distances
 bray<-apply(asv, 2, function(i) (i/sum(i))*100);
-
 ps1<- phyloseq(otu_table(bray, taxa_are_rows=TRUE));
 bray.dist=phyloseq::distance(ps1, method="bray");
 
-ps2<- phyloseq(otu_table(asv, taxa_are_rows=TRUE),
-               phy_tree(fitGTR$tree));
-set.seed(711);
-phy_tree(ps2) <- root(phy_tree(ps2), sample(taxa_names(ps2), 1), resolve.root = TRUE); 
-wun.dist=phyloseq::distance(ps2, method="wunifrac");
+ps2=microbiome::transform(ps1,"clr",target="OTU");
+clr.dist=phyloseq::distance(ps2, method="euclidean");
 
-# clr (center log ratio) for Aitchison distance ("compositions")
+
 clra=data.frame(clr(asv));
 ps3<- phyloseq(otu_table(clra, taxa_are_rows=TRUE));
 clr.dist=phyloseq::distance(ps3, method="euclidean");
@@ -64,7 +59,7 @@ clr.dist=phyloseq::distance(ps3, method="euclidean");
 ################################################################################
 
 #  melt dissimilarity distance and append sample metadata
-df1=reshape2::melt(as.matrix(clr.dist));   # bray.dist OR wun.dist
+df1=reshape2::melt(as.matrix(bray.dist));   # bray.dist OR wun.dist
 colnames(df1)[1]="sampleID";
 df1=inner_join(df1, meta2[,c(1,3,4,10,16,20,23:25,30,31)], by="sampleID"); 
 colnames(df1)=c("sam1","sampleID","val","type1","name1","bod1","antibiotics1",
@@ -125,7 +120,7 @@ p1=ggplot(d,aes(x=response1, y=mean_abun,ymax=0.01))+
   geom_errorbar(aes(ymin = lower, ymax = upper, 
                     colour="#fc9272", width = 0)) +
   geom_hline(yintercept = 0, linetype="dashed", 
-             color = "#737373", size=0.5)+
+             color = "#737373", linewidth=0.5)+
   theme_classic()+
   scale_x_discrete(labels=c("Responder" = "Resp.", 
                             "Non-Responder" = "Non-Resp."))+
@@ -159,7 +154,7 @@ p2=ggplot(d,aes(x=symptom1, y=mean_abun, ymin=-0.06))+
   geom_errorbar(aes(ymin = lower, ymax = upper, 
                     colour="#fc9272", width = 0)) +
   geom_hline(yintercept = 0, linetype="dashed", 
-             color = "#737373", size=0.5)+
+             color = "#737373", linewidth=0.5)+
   theme_classic()+
   labs(y="Mean Δ Similarity to Healthy",
        x="")+                                                                         
@@ -189,7 +184,7 @@ p4=ggplot(d,aes(x=antibiotics1, y=mean_abun, ymin=-0.03))+
   geom_errorbar(aes(ymin = lower, ymax = upper, 
                     colour="#fc9272", width = 0)) +
   geom_hline(yintercept = 0, linetype="dashed", 
-             color = "#737373", size=0.5)+
+             color = "#737373", linewidth=0.5)+
   theme_classic()+
   labs(y="Mean Δ Similarity to Healthy",
        x="")+                                                                         
@@ -219,7 +214,7 @@ p5=ggplot(d,aes(x=dry1, y=mean_abun, ymax=0.02))+
   geom_errorbar(aes(ymin = lower, ymax = upper, 
                     colour="#fc9272", width = 0)) +
   geom_hline(yintercept = 0, linetype="dashed", 
-             color = "#737373", size=0.5)+
+             color = "#737373", linewidth=0.5)+
   theme_classic()+
   labs(y="Mean Δ Similarity to Healthy",
        x="")+                                                                         

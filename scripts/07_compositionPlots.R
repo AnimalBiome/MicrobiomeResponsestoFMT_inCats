@@ -77,18 +77,19 @@ fam_col2=c("#771155", "#AA4488", "#CC99BB", "#114477","#77AADD",
 
 
 # subset df to pick eight random cats
-nms=unique(genbar$name);
-set.seed(1);
-nloc <- sort(sample.int(46, 8));  #2 15 21 22 28 29 32 37
-nms=nms[nloc];
-genbar=genbar[genbar$name %in% nms,];
-genbar$type=factor(genbar$type,levels=c("before","after"));
+want=c("Chelsea","Leonidas","Goldy","Ender",
+       "Morrigan","Spanky",
+       "Poe","Cinders", "Archie",
+       "Frankie","Misha","Tenga");
+genbar=genbar[genbar$name %in% want,];
 
 # anonimize cat names
 genbar$name=factor(genbar$name,levels=c("Chelsea","Leonidas","Goldy","Ender",
                                         "Morrigan","Spanky",
-                                        "Poe","Cinders"));
-supp.labs <- c("Cat1","Cat2","Cat3","Cat4","Cat5","Cat6","Cat7","Cat8");
+                                        "Poe","Cinders", "Archie",
+                                        "Frankie","Misha","Tenga"));
+supp.labs <- c("Cat1","Cat2","Cat3","Cat4","Cat5","Cat6","Cat7","Cat8",
+               "Cat9","Cat10","Cat11","Cat12");
 names(supp.labs) <- levels(genbar$name);
 
 
@@ -117,10 +118,10 @@ barp3=ggplot(data=genbar,
         strip.text = element_text(size =13,face="bold"),
         axis.title.x = element_text(size=13, face="bold")); plot(barp3);
 
-ggsave(filename="07_microbiome_composition_8cats.pdf",
+ggsave(filename="07_microbiome_composition_last12cats.pdf",
        device="pdf",path="./figures",
        plot=barp3,
        width=10,
-       height=7.5,
+       height=9.5,
        units="in",
        dpi=500);

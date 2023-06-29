@@ -26,7 +26,6 @@ source(file="scripts/00_configure.R"); #set up environment
 
 load("data/01_cats_meta.Rdata");
 load("data/01_ASV_table.Rdata");
-load("data/02_ASV_phylotree.Rdata");
 
 # retain samples from FMT recipients 
 meta2=meta[meta$group=="recipient",];
@@ -53,22 +52,16 @@ bray<-apply(asv, 2, function(i) (i/sum(i))*100);
 ps1<- phyloseq(otu_table(bray, taxa_are_rows=TRUE));
 bray.dist=phyloseq::distance(ps1, method="bray");
 
-ps2<- phyloseq(otu_table(asv, taxa_are_rows=TRUE),
-               phy_tree(fitGTR$tree));
-set.seed(711);
-phy_tree(ps2) <- root(phy_tree(ps2), sample(taxa_names(ps2), 1), resolve.root = TRUE); 
-wun.dist=phyloseq::distance(ps2, method="wunifrac");
-
-clra=data.frame(clr(asv));
-ps3<- phyloseq(otu_table(clra, taxa_are_rows=TRUE));
-clr.dist=phyloseq::distance(ps3, method="euclidean");
+ps2=phyloseq(otu_table(asv,taxa_are_rows=TRUE));
+ps2=microbiome::transform(ps2,"clr",target="OTU");
+clr.dist=phyloseq::distance(ps2, method="euclidean");
 
 # microbiome beta-diversity ~ host predictors
-mydist=list(bray.dist,wun.dist,clr.dist);
-names=c("Bray-Curtis","WUNIFRAC","Aitchison");
-met=c("bray","euclidian","euclidean"); 
+mydist=list(bray.dist, clr.dist);
+names=c("Bray-Curtis","Aitchison");
+met=c("bray","euclidian"); 
 
-for(i in 1:3)
+for(i in 1:2)
 {
   print(paste("PERMANOVA ~ host predictors, N=46",names[i]));
   print(adonis2(mydist[[i]]~
@@ -100,7 +93,7 @@ for(i in 1:3)
 ################################################################################
 
 # clinical signs
-for(i in 1:3)
+for(i in 1:2)
 {
   print(paste("PERMDISP test, N=67",names[i]));
   bdisper<-with(after,    # before or after
@@ -110,7 +103,7 @@ for(i in 1:3)
 };
 
 # dry kibble consumption
-for(i in 1:3)
+for(i in 1:2)
 {
   print(paste("PERMDISP test, N=67",names[i]));
   bdisper<-with(after,    # before or after
@@ -142,6 +135,7 @@ pcoa_met$symptom=factor(pcoa_met$symptom, levels=c("Diarrhea","VomDiarr",
                                                "VomConstip","Constipation"));
 pcoa_met$dry_food=factor(pcoa_met$dry_food,levels=c("Yes","No"));
 
+
 ################################################################################
 #             5. plot PCoAs!
 ################################################################################
@@ -161,7 +155,7 @@ pcoa1=ggplot(pcoa_met, aes(Axis1, Axis2))+
   theme_bw()+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        panel.background = element_rect(colour = "black", size=2),
+        panel.background = element_rect(colour = "black", linewidth =2),
         legend.position="right",
         legend.text=element_text(size=13),
         legend.title=element_text(size=13, face="bold"),
@@ -186,7 +180,7 @@ pcoa2=ggplot(pcoa_met, aes(Axis1, Axis2))+
   theme_bw()+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        panel.background = element_rect(colour = "black", size=2),
+        panel.background = element_rect(colour = "black", linewidth =2),
         legend.position="right",
         legend.text=element_text(size=13),
         legend.title=element_text(size=13, face="bold"),
